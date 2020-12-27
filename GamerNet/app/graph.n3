@@ -1,709 +1,3038 @@
 @prefix game: <http://GamerNetLibrary.com/> .
 
 game:10 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Shared/Split Screen PvP",
+        "Valve Anti-Cheat enabled" ;
     game:description "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects your role." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/10/header.jpg?t=1602535893" ;
     game:name "Counter-Strike" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "1 Nov, 2000" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/10/0000000132.1920x1080.jpg?t=1602535893" ;
     game:website "None" .
 
 game:10180 a game:game ;
+    game:category "Co-op",
+        "Multi-player",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Valve Anti-Cheat enabled" ;
     game:description "The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse." ;
+    game:dlc game:dlc10195,
+        game:dlc10196 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/10180/header.jpg?t=1573057968" ;
     game:name "Call of Duty®: Modern Warfare® 2" ;
+    game:platform "mac",
+        "windows" ;
+    game:price "19,99€" ;
     game:release_date "11 Nov, 2009" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/10180/ss_51a130e076354ed7aa025fda1ef9ba62c3ed767a.1920x1080.jpg?t=1573057968" ;
     game:website "https://www.callofduty.com/" .
 
 game:1046930 a game:game ;
+    game:category "Cross-Platform Multiplayer",
+        "Multi-player",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Cloud" ;
     game:description "Hire a crew and destroy your rivals in this new strategy battler set in the world of Dota. Introducing Season One: Explore White Spire and earn rewards on the Battle Pass. Pick from several different game modes, play on your own or with friends, and take advantage of crossplay on PC and mobile." ;
+    game:genre "Casual",
+        "Free to Play",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/1046930/header.jpg?t=1591066870" ;
     game:name "Dota Underlords" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "20 Jun, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/1046930/ss_25ad872bc9a8ecf634a76ce1d4bb22aea9b728c9.1920x1080.jpg?t=1591066870" ;
     game:website "http://underlords.com/" .
 
 game:105600 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!" ;
+    game:dlc game:dlc1323320,
+        game:dlc409210 ;
+    game:genre "Action",
+        "Adventure",
+        "Indie",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg?t=1590092560" ;
     game:name "Terraria" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "4,99€" ;
     game:release_date "16 May, 2011" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.1920x1080.jpg?t=1590092560" ;
     game:website "http://www.terraria.org/" .
 
 game:107410 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "Includes level editor",
+        "LAN Co-op",
+        "LAN PvP",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Leaderboards",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Experience true combat gameplay in a massive military sandbox. Deploying a wide variety of single- and multiplayer content, over 20 vehicles and 40 weapons, and limitless opportunities for content creation, this is the PC’s premier military game. Authentic, diverse, open - Arma 3 sends you to war." ;
+    game:dlc game:dlc1021790,
+        game:dlc1042220,
+        game:dlc1294440,
+        game:dlc249860,
+        game:dlc275700,
+        game:dlc288520,
+        game:dlc304380,
+        game:dlc332350,
+        game:dlc395180,
+        game:dlc571710,
+        game:dlc601670,
+        game:dlc639600,
+        game:dlc744950,
+        game:dlc798390 ;
+    game:genre "Action",
+        "Simulation",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/107410/header_alt_assets_13.jpg?t=1608211055" ;
     game:name "Arma 3" ;
+    game:platform "windows" ;
+    game:price "6,99€" ;
     game:release_date "12 Sep, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/107410/ss_e9220742c6b786efc9145c58ce7b276af891e9d5.1920x1080.jpg?t=1608211055" ;
     game:website "http://www.arma3.com" .
 
 game:1085660 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "In-App Purchases",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements" ;
     game:description "Destiny 2 is an action MMO with a single evolving world that you and your friends can join anytime, anywhere, absolutely free." ;
+    game:dlc game:dlc1090150,
+        game:dlc1090200,
+        game:dlc1314561,
+        game:dlc1370350 ;
+    game:genre "Action",
+        "Adventure",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/1085660/header.jpg?t=1607380522" ;
     game:name "Destiny 2" ;
+    game:platform "windows" ;
     game:release_date "1 Oct, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/1085660/ss_7fcc82f468fcf8278c7ffa95cebf949bfc6845fc.1920x1080.jpg?t=1607380522" ;
     game:website "https://www.bungie.net/" .
 
 game:1089350 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "In-App Purchases",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Shared/Split Screen",
+        "Shared/Split Screen Co-op",
+        "Shared/Split Screen PvP",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud" ;
     game:description "2K continues to redefine what’s possible in sports gaming with NBA 2K20, featuring best in class graphics &amp; gameplay, ground breaking game modes, and unparalleled player control and customization." ;
+    game:genre "Simulation",
+        "Sports" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/1089350/header.jpg?t=1595623296" ;
     game:name "NBA 2K20" ;
+    game:platform "windows" ;
+    game:price "49,99€" ;
     game:release_date "5 Sep, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/1089350/ss_cca9e0f6d522e7c0bd8ae1e9ac59712ccce43c4e.1920x1080.jpg?t=1595623296" ;
     game:website "https://nba.2k.com/2k20/" .
 
 game:1091500 a game:game ;
+    game:category "Partial Controller Support",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality." ;
+    game:genre "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/1091500/header.jpg?t=1608552868" ;
     game:name "Cyberpunk 2077" ;
+    game:platform "windows" ;
+    game:price "S$69.00" ;
     game:release_date "9 Dec, 2020" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/1091500/ss_9beef14102f164fa1163536d0fb3a51d0a2e4a3f.1920x1080.jpg?t=1608552868" ;
     game:website "https://www.cyberpunk.net" .
 
 game:109600 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "Includes level editor",
+        "MMO",
+        "Multi-player",
+        "Steam Trading Cards" ;
     game:description "Neverwinter is a free, action MMORPG based on the acclaimed Dungeons &amp; Dragons fantasy roleplaying game. Epic stories, action combat and classic roleplaying await those heroes courageous enough to enter the fantastic world of Neverwinter!" ;
+    game:genre "Adventure",
+        "Free to Play",
+        "Massively Multiplayer",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/109600/header.jpg?t=1597095741" ;
     game:name "Neverwinter" ;
+    game:platform "windows" ;
     game:release_date "5 Dec, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/109600/ss_4cebfb468c713e5126c95479c30866fff975bfaf.1920x1080.jpg?t=1597095741" ;
     game:website "http://www.arcgames.com/en/games/neverwinter/news" .
 
 game:1097150 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Steam Achievements" ;
     game:description "Fall Guys is a massively multiplayer party game with up to 60 players online in a free-for-all struggle through round after round of escalating chaos until one victor remains!" ;
+    game:dlc game:dlc1343612,
+        game:dlc1362660,
+        game:dlc1426910,
+        game:dlc1481570 ;
+    game:genre "Action",
+        "Casual",
+        "Indie",
+        "Massively Multiplayer",
+        "Sports" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/1097150/header_alt_assets_2.jpg?t=1608598304" ;
     game:name "Fall Guys: Ultimate Knockout" ;
+    game:platform "windows" ;
+    game:price "15,99€" ;
     game:release_date "3 Aug, 2020" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/1097150/ss_242e6f5aa36e166864002ed976ed0293dfe49011.1920x1080.jpg?t=1608598304" ;
     game:website "http://fallguys.com" .
 
 game:1172470 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "In-App Purchases",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Apex Legends is the award-winning, free-to-play Battle Royale team shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities and experience strategic squad play and innovative gameplay in the next evolution of Battle Royale." ;
+    game:dlc game:dlc1311090,
+        game:dlc1311091,
+        game:dlc1311092,
+        game:dlc1311098,
+        game:dlc1440320,
+        game:dlc1445950,
+        game:dlc1445990 ;
+    game:genre "Action",
+        "Adventure",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/1172470/header.jpg?t=1608238921" ;
     game:name "Apex Legends™" ;
+    game:platform "windows" ;
     game:release_date "4 Nov, 2020" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/1172470/ss_69b6e59d3ea2b06efece9d920e980a5bda12bdb7.1920x1080.jpg?t=1608238921" ;
     game:website "https://www.ea.com/games/apex-legends" .
 
 game:130 a game:game ;
+    game:category "Remote Play Together",
+        "Single-player" ;
     game:description "Made by Gearbox Software and originally released in 2001 as an add-on to Half-Life, Blue Shift is a return to the Black Mesa Research Facility in which you play as Barney Calhoun, the security guard sidekick who helped Gordon out of so many sticky situations." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/130/header.jpg?t=1579629868" ;
     game:name "Half-Life: Blue Shift" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "0,79€" ;
     game:release_date "1 Jun, 2001" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/130/0000000127.1920x1080.jpg?t=1579629868" ;
     game:website "None" .
 
 game:203160 a game:game ;
+    game:category "Full controller support",
+        "Multi-player",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor." ;
+    game:dlc game:dlc208790,
+        game:dlc208791,
+        game:dlc208792,
+        game:dlc208793,
+        game:dlc208801,
+        game:dlc208802,
+        game:dlc208803,
+        game:dlc208804,
+        game:dlc208805,
+        game:dlc208806,
+        game:dlc208807,
+        game:dlc208808,
+        game:dlc208809,
+        game:dlc208810,
+        game:dlc208811,
+        game:dlc208812,
+        game:dlc208813,
+        game:dlc208814,
+        game:dlc208817,
+        game:dlc208818 ;
+    game:genre "Action",
+        "Adventure" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/203160/header.jpg?t=1601485883" ;
     game:name "Tomb Raider" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "2,69€" ;
     game:release_date "4 Mar, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/203160/ss_65861a8ea2efcb01fca8aa4b1233663bb053ab54.1920x1080.jpg?t=1601485883" ;
     game:website "http://www.tombraider.com" .
 
 game:218230 a game:game ;
+    game:category "MMO",
+        "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "PlanetSide 2 is an all-out planetary war, where thousands of players battle as one across enormous continents. Utilize infantry, ground and air vehicles, and teamwork to destroy your enemies in this revolutionary first-person shooter on a massive scale." ;
+    game:genre "Action",
+        "Free to Play",
+        "Massively Multiplayer" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/218230/header.jpg?t=1602861166" ;
     game:name "PlanetSide 2" ;
+    game:platform "windows" ;
     game:release_date "20 Nov, 2012" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/218230/ss_543d3d7261e02fef6443d43b339a78afa63b851a.1920x1080.jpg?t=1602861166" ;
     game:website "http://www.planetside2.com/" .
 
 game:218620 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "In-App Purchases",
+        "Multi-player",
+        "Online Co-op",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "PAYDAY 2 is an action-packed, four-player co-op shooter that once again lets gamers don the masks of the original PAYDAY crew - Dallas, Hoxton, Wolf and Chains - as they descend on Washington DC for an epic crime spree." ;
+    game:dlc game:dlc1184410,
+        game:dlc1184411,
+        game:dlc1184412,
+        game:dlc1252200,
+        game:dlc1255150,
+        game:dlc1255151,
+        game:dlc1255152,
+        game:dlc1347750,
+        game:dlc1347751,
+        game:dlc1351060,
+        game:dlc1449440,
+        game:dlc1449441,
+        game:dlc1449442,
+        game:dlc1449450,
+        game:dlc254260,
+        game:dlc259380,
+        game:dlc259381,
+        game:dlc264610,
+        game:dlc267380,
+        game:dlc267381,
+        game:dlc267382,
+        game:dlc271110,
+        game:dlc274160,
+        game:dlc274161,
+        game:dlc275590,
+        game:dlc284430,
+        game:dlc288900,
+        game:dlc306690,
+        game:dlc311050,
+        game:dlc320030,
+        game:dlc323500,
+        game:dlc330010,
+        game:dlc330490,
+        game:dlc330491,
+        game:dlc331900,
+        game:dlc337660,
+        game:dlc337661,
+        game:dlc339480,
+        game:dlc344140,
+        game:dlc348090,
+        game:dlc349830,
+        game:dlc351890,
+        game:dlc358150,
+        game:dlc366660,
+        game:dlc368870,
+        game:dlc374300,
+        game:dlc374301,
+        game:dlc384020,
+        game:dlc384021,
+        game:dlc401650,
+        game:dlc422400,
+        game:dlc433730,
+        game:dlc441600,
+        game:dlc450660,
+        game:dlc468410,
+        game:dlc487210,
+        game:dlc545100,
+        game:dlc548420,
+        game:dlc548421,
+        game:dlc591710,
+        game:dlc612900,
+        game:dlc758420,
+        game:dlc826090 ;
+    game:genre "Action",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/218620/header_alt_assets_9.jpg?t=1608555607" ;
     game:name "PAYDAY 2" ;
+    game:platform "linux",
+        "windows" ;
+    game:price "0,99€" ;
     game:release_date "13 Aug, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/218620/ss_67979091e0441e3df7aa885eaa107e2032973869.1920x1080.jpg?t=1608555607" ;
     game:website "http://www.overkillsoftware.com/" .
 
 game:219640 a game:game ;
+    game:category "Full controller support",
+        "Includes level editor",
+        "Multi-player",
+        "Remote Play on TV",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "Besiege castles and raid villages in Chivalry: Medieval Warfare, a fast-paced medieval first person slasher with a focus on multiplayer battles" ;
+    game:dlc game:dlc241280,
+        game:dlc332240 ;
+    game:genre "Action",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/219640/header.jpg?t=1589576854" ;
     game:name "Chivalry: Medieval Warfare" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "4,59€" ;
     game:release_date "16 Oct, 2012" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/219640/ss_170b491759e866cf5c3d8f707283e9095383dc5f.1920x1080.jpg?t=1589576854" ;
     game:website "http://www.tornbanner.com/chivalry" .
 
 game:219740 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Don’t Starve is an uncompromising wilderness survival game full of science and magic. Enter a strange and unexplored world full of strange creatures, dangers, and surprises. Gather resources to craft items and structures that match your survival style." ;
+    game:dlc game:dlc219750,
+        game:dlc282470,
+        game:dlc393010,
+        game:dlc712640 ;
+    game:genre "Adventure",
+        "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/219740/header.jpg?t=1602117150" ;
     game:name "Don't Starve" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "2,04€" ;
     game:release_date "" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/219740/ss_09bb6bdce4fa085c2c4a9a8f48ea52d3051b44bc.1920x1080.jpg?t=1602117150" ;
     game:website "http://www.dontstarvegame.com" .
 
 game:219990 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "LAN Co-op",
+        "Multi-player",
+        "Online Co-op",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Enter an apocalyptic fantasy world where humanity is on the brink of extinction, iron is valued above gold and trust is hard earned. This ARPG features complex character development, hundreds of unique items, crafting and quests with choice &amp; consequence." ;
+    game:dlc game:dlc1088290,
+        game:dlc1250890,
+        game:dlc483840,
+        game:dlc565610,
+        game:dlc642280,
+        game:dlc897670 ;
+    game:genre "Action",
+        "Adventure",
+        "Indie",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/219990/header.jpg?t=1604937300" ;
     game:name "Grim Dawn" ;
+    game:platform "windows" ;
+    game:price "4,99€" ;
     game:release_date "25 Feb, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/219990/ss_163bf567dd0b246da53cf4d7d0724ac8d8a7e075.1920x1080.jpg?t=1604937300" ;
     game:website "http://www.grimdawn.com/" .
 
 game:220 a game:game ;
+    game:category "Captions available",
+        "Includes Source SDK",
+        "Partial Controller Support",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling. Valve's debut title wins more than 50 game-of-the-year awards on its way to being named \"Best PC Game Ever\" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide." ;
+    game:dlc game:dlc323140 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/220/header.jpg?t=1591063154" ;
     game:name "Half-Life 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "16 Nov, 2004" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/220/0000001864.1920x1080.jpg?t=1591063154" ;
     game:website "http://www.half-life2.com" .
 
 game:221380 a game:game ;
+    game:category "Captions available",
+        "Includes level editor",
+        "Multi-player",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Leaderboards",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Age of Empires II has been re-imagined in high definition with new features, trading cards, improved AI, workshop support, multiplayer, Steamworks integration and more!" ;
+    game:dlc game:dlc239550,
+        game:dlc355950,
+        game:dlc488060 ;
+    game:genre "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/221380/header.jpg?t=1567618315" ;
     game:name "Age of Empires II (2013)" ;
+    game:platform "windows" ;
+    game:price "19,99€" ;
     game:release_date "9 Apr, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/221380/ss_f196e3b1c70038e09140f12aebcfdf0ef57915b0.1920x1080.jpg?t=1567618315" ;
     game:website "http://www.AgeofEmpires.com" .
 
 game:224260 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "Cross-Platform Multiplayer",
+        "Includes Source SDK",
+        "Includes level editor",
+        "Multi-player",
+        "Partial Controller Support",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Workshop",
+        "VR Support",
+        "Valve Anti-Cheat enabled" ;
     game:description "The chances of you surviving this all out war of society and the undead are slim to none. Already, there are millions of the walking dead shambling about, searching for food to eat. There's no known cure. One bite can possibly end it all for you. However, you aren't alone in this nightmare." ;
+    game:dlc game:dlc310660 ;
+    game:genre "Action",
+        "Free to Play",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/224260/header.jpg?t=1598016602" ;
     game:name "No More Room in Hell" ;
+    game:platform "linux",
+        "windows" ;
     game:release_date "31 Oct, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/224260/ss_e5e8941961b51fba8fec5f333bdcdf760f2e9e23.1920x1080.jpg?t=1598016602" ;
     game:website "https://www.nomoreroominhell.com/" .
 
 game:227300 a game:game ;
+    game:category "Includes level editor",
+        "Partial Controller Support",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits." ;
+    game:dlc game:dlc1056760,
+        game:dlc1056761,
+        game:dlc1068290,
+        game:dlc1117140,
+        game:dlc1159030,
+        game:dlc1209460,
+        game:dlc1209461,
+        game:dlc1299530,
+        game:dlc1415700,
+        game:dlc227310,
+        game:dlc258460,
+        game:dlc266930,
+        game:dlc266931,
+        game:dlc292320,
+        game:dlc297790,
+        game:dlc297791,
+        game:dlc297792,
+        game:dlc297793,
+        game:dlc301180,
+        game:dlc304020,
+        game:dlc304140,
+        game:dlc304210,
+        game:dlc304211,
+        game:dlc304212,
+        game:dlc304213,
+        game:dlc304214,
+        game:dlc318500,
+        game:dlc318510,
+        game:dlc318511,
+        game:dlc318520,
+        game:dlc318521,
+        game:dlc347190,
+        game:dlc347210,
+        game:dlc347211,
+        game:dlc347212,
+        game:dlc347213,
+        game:dlc388470,
+        game:dlc388471,
+        game:dlc388472,
+        game:dlc388474,
+        game:dlc388475,
+        game:dlc388476,
+        game:dlc388477,
+        game:dlc388479,
+        game:dlc461240,
+        game:dlc461241,
+        game:dlc461242,
+        game:dlc461243,
+        game:dlc461244,
+        game:dlc461245,
+        game:dlc461246,
+        game:dlc461247,
+        game:dlc461248,
+        game:dlc461249,
+        game:dlc531130,
+        game:dlc531131,
+        game:dlc540720,
+        game:dlc540721,
+        game:dlc558240,
+        game:dlc558241,
+        game:dlc558242,
+        game:dlc558243,
+        game:dlc558244,
+        game:dlc558245,
+        game:dlc876980,
+        game:dlc909640,
+        game:dlc925580,
+        game:dlc925650,
+        game:dlc933610,
+        game:dlc980590,
+        game:dlc980591,
+        game:dlc980592 ;
+    game:genre "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/227300/header_alt_assets_4.jpg?t=1608220310" ;
     game:name "Euro Truck Simulator 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "4,99€" ;
     game:release_date "12 Oct, 2012" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/227300/ss_b70d5295ecc738dc2279797ec8351ac0fdf139f4.1920x1080.jpg?t=1608220310" ;
     game:website "https://eurotrucksimulator2.com/" .
 
 game:227940 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP" ;
     game:description "Shoot, blow sh!t up, fly or bark orders in the ultimate Free-to-Play, large scale, multiplayer, shooter experience. Thousands of players in multiple battles fighting one massive war of nations. The first to capture 15 cities takes the glory." ;
+    game:dlc game:dlc1189890,
+        game:dlc1189900,
+        game:dlc1189910,
+        game:dlc1322790,
+        game:dlc1322791,
+        game:dlc1322792,
+        game:dlc1322793,
+        game:dlc1322794,
+        game:dlc1322795,
+        game:dlc1322796,
+        game:dlc1322797,
+        game:dlc1322798,
+        game:dlc1496400,
+        game:dlc1496401,
+        game:dlc1496402,
+        game:dlc1496403,
+        game:dlc1496404,
+        game:dlc1496420,
+        game:dlc1496421,
+        game:dlc1496422,
+        game:dlc1496423,
+        game:dlc595200,
+        game:dlc595230 ;
+    game:genre "Action",
+        "Free to Play",
+        "Indie",
+        "Massively Multiplayer",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/227940/header_alt_assets_9.jpg?t=1608812333" ;
     game:name "Heroes & Generals" ;
+    game:platform "windows" ;
     game:release_date "18 Oct, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/227940/ss_83dde48763bae00c53906ef234a042ab5b0fd259.1920x1080.jpg?t=1608812333" ;
     game:website "https://www.heroesandgenerals.com/" .
 
 game:230410 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "Multi-player",
+        "Partial Controller Support",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Trading Cards" ;
     game:description "Warframe is a cooperative free-to-play third person online action game set in an evolving sci-fi world." ;
+    game:dlc game:dlc1390110,
+        game:dlc1390130,
+        game:dlc1390131,
+        game:dlc1390132,
+        game:dlc1442700,
+        game:dlc1442701,
+        game:dlc1442702,
+        game:dlc1442703 ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/230410/header.jpg?t=1608327513" ;
     game:name "Warframe" ;
+    game:platform "windows" ;
     game:release_date "25 Mar, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/230410/ss_2d79448091149a8cc790b62e7422615a011d015a.1920x1080.jpg?t=1608327513" ;
     game:website "http://www.warframe.com" .
 
 game:236390 a game:game ;
+    game:category "Co-op",
+        "Cross-Platform Multiplayer",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Partial Controller Support",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements" ;
     game:description "War Thunder is the most comprehensive free-to-play, cross-platform, MMO military game dedicated to aviation, armoured vehicles, and naval craft from World War II and the Cold War. Join now and take part in major battles on land, in the air, and at sea, fighting with millions of players from all over the world in an ever-evolving..." ;
+    game:dlc game:dlc1108450,
+        game:dlc1233370,
+        game:dlc1233371,
+        game:dlc1247130,
+        game:dlc1247140,
+        game:dlc1247150,
+        game:dlc1331220,
+        game:dlc1331221,
+        game:dlc1347610,
+        game:dlc1364971,
+        game:dlc1368110,
+        game:dlc1368800,
+        game:dlc1368801,
+        game:dlc1415530,
+        game:dlc1423760,
+        game:dlc1478810 ;
+    game:genre "Action",
+        "Free to Play",
+        "Massively Multiplayer",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/236390/header.jpg?t=1608895326" ;
     game:name "War Thunder" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "15 Aug, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/236390/ss_979529bc97de6add045f5984c8dbf9d4d80d0061.1920x1080.jpg?t=1608895326" ;
     game:website "http://warthunder.com/" .
 
 game:238960 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world." ;
+    game:genre "Action",
+        "Adventure",
+        "Free to Play",
+        "Indie",
+        "Massively Multiplayer",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/238960/header.jpg?t=1605065705" ;
     game:name "Path of Exile" ;
+    game:platform "mac",
+        "windows" ;
     game:release_date "23 Oct, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/238960/ss_f50b319eb3cd8c88acb2cc0359359d656ae06624.1920x1080.jpg?t=1605065705" ;
     game:website "http://www.pathofexile.com" .
 
 game:239140 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Includes level editor",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic. Scavenge for supplies, craft weapons, and face hordes of the infected." ;
+    game:dlc game:dlc1034630,
+        game:dlc1112520,
+        game:dlc1112521,
+        game:dlc1174580,
+        game:dlc1174581,
+        game:dlc1177880,
+        game:dlc1184350,
+        game:dlc1184351,
+        game:dlc1241570,
+        game:dlc1272090,
+        game:dlc1300710,
+        game:dlc1354960,
+        game:dlc1454750,
+        game:dlc1468290,
+        game:dlc302101,
+        game:dlc325723,
+        game:dlc325724,
+        game:dlc335810,
+        game:dlc347090,
+        game:dlc435111,
+        game:dlc436080,
+        game:dlc436081,
+        game:dlc436082,
+        game:dlc748340,
+        game:dlc748341,
+        game:dlc798540,
+        game:dlc798541,
+        game:dlc798542,
+        game:dlc798543 ;
+    game:genre "Action",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/239140/header_alt_assets_28.jpg?t=1608647864" ;
     game:name "Dying Light" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "10,19€" ;
     game:release_date "26 Jan, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/239140/ss_ac414827362042b5f4a95ab90df508adc822ddc1.1920x1080.jpg?t=1608647864" ;
     game:website "https://dyinglightgame.com/?utm_source=Steam&amp;utm_medium=Link&amp;utm_campaign=Dying_Light" .
 
 game:242760 a game:game ;
+    game:category "Co-op",
+        "LAN Co-op",
+        "Multi-player",
+        "Online Co-op",
+        "Partial Controller Support",
+        "Single-player",
+        "Steam Cloud" ;
     game:description "As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first person survival horror simulator." ;
+    game:genre "Action",
+        "Adventure",
+        "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/242760/header.jpg?t=1590522045" ;
     game:name "The Forest" ;
+    game:platform "windows" ;
+    game:price "$9.99" ;
     game:release_date "Apr 30, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/242760/ss_8ccb821c4df3fafdf4161d77f38635441a8157f2.1920x1080.jpg?t=1590522045" ;
     game:website "http://survivetheforest.com/" .
 
 game:252490 a game:game ;
+    game:category "Co-op",
+        "Cross-Platform Multiplayer",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Tablet",
+        "Stats",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players." ;
+    game:dlc game:dlc1174370,
+        game:dlc1353060 ;
+    game:genre "Action",
+        "Adventure",
+        "Indie",
+        "Massively Multiplayer",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/252490/header_alt_assets_6.jpg?t=1608404151" ;
     game:name "Rust" ;
+    game:platform "mac",
+        "windows" ;
+    game:price "22,77€" ;
     game:release_date "8 Feb, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/252490/ss_9652dbaf2de41b8c8f8305af714ee258564c453d.1920x1080.jpg?t=1608404151" ;
     game:website "http://rust.facepunch.com/" .
 
 game:252950 a game:game ;
+    game:category "Cartes à échanger Steam",
+        "Compat. manette : complète",
+        "Coop local et écran partagé",
+        "Coopération",
+        "Coopération en ligne",
+        "Multijoueur",
+        "Multijoueur Cross-Platform",
+        "PvP",
+        "PvP en ligne",
+        "PvP en écran partagé",
+        "Remote Play Together",
+        "Remote Play sur tablette",
+        "Remote Play sur téléphone",
+        "Remote Play sur télévision",
+        "Stats",
+        "Steam Cloud",
+        "Steam Workshop",
+        "Succès Steam",
+        "Un joueur",
+        "Écran partagé" ;
     game:description "Football et voitures font bon ménage dans cette suite basée sur les lois de la physique du grand classique tant apprécié, Supersonic Acrobatic Rocket-Powered Battle-Cars !" ;
+    game:genre "Action",
+        "Course automobile",
+        "Indépendant",
+        "Sport" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/252950/header.jpg?t=1607530214" ;
     game:name "Rocket League®" ;
+    game:platform "windows" ;
     game:release_date "6 juil. 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/252950/ss_9c3ebba8b765eab8d5cf7d7a71d0f7cd940ccca3.1920x1080.jpg?t=1607530214" ;
     game:website "http://www.rocketleague.com/" .
 
 game:253710 a game:game ;
+    game:category "Co-op",
+        "Multi-player",
+        "Online Co-op",
+        "Single-player",
+        "Steam Achievements" ;
     game:description "The most realistic hunting experience awaits. Explore 12 reserves and hunt 45 unique species, ranging from waterfowl to big game. Over 100 weapons from state-of-the art rifles to bows. Customize your load-out with stands, blinds and dogs. Play alone or in multiplayer with up to 7 friends." ;
+    game:dlc game:dlc584970 ;
+    game:genre "Action",
+        "Adventure",
+        "Free to Play",
+        "Simulation",
+        "Sports" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/253710/header.jpg?t=1605868170" ;
     game:name "theHunter Classic" ;
+    game:platform "windows" ;
     game:release_date "3 Jun, 2014" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/253710/ss_d4719330cdc53d3f18f5dab9222faac1067513d8.1920x1080.jpg?t=1605868170" ;
     game:website "http://www.thehunter.com/" .
 
 game:255710 a game:game ;
+    game:category "Includes level editor",
+        "Partial Controller Support",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Cities: Skylines is a modern take on the classic city simulation. The game introduces new game play elements to realize the thrill and hardships of creating and maintaining a real city whilst expanding on some well-established tropes of the city building experience." ;
+    game:dlc game:dlc1059820,
+        game:dlc1065490,
+        game:dlc1065491,
+        game:dlc1146930,
+        game:dlc1148020,
+        game:dlc1148021,
+        game:dlc1148022,
+        game:dlc1196100,
+        game:dlc346791,
+        game:dlc369150,
+        game:dlc420610,
+        game:dlc456200,
+        game:dlc515190,
+        game:dlc515191,
+        game:dlc547500,
+        game:dlc547501,
+        game:dlc547502,
+        game:dlc563850,
+        game:dlc614580,
+        game:dlc614581,
+        game:dlc614582,
+        game:dlc715190,
+        game:dlc715191,
+        game:dlc715192,
+        game:dlc715193,
+        game:dlc715194,
+        game:dlc815380,
+        game:dlc944070,
+        game:dlc944071 ;
+    game:genre "Simulation",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/255710/header.jpg?t=1606821413" ;
     game:name "Cities: Skylines" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "6,99€" ;
     game:release_date "10 Mar, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/255710/ss_0ff5efa28d8c6761ee2e9c57412ca3bd9e133fed.1920x1080.jpg?t=1606821413" ;
     game:website "None" .
 
 game:261550 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Cloud" ;
     game:description "The horns sound, the ravens gather. An empire is torn by civil war. Beyond its borders, new kingdoms rise. Gird on your sword, don your armour, summon your followers and ride forth to win glory on the battlefields of Calradia. Establish your hegemony and create a new world out of the ashes of the old." ;
+    game:genre "Action",
+        "Early Access",
+        "RPG",
+        "Simulation",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/261550/header.jpg?t=1608928062" ;
     game:name "Mount & Blade II: Bannerlord" ;
+    game:platform "windows" ;
+    game:price "39,99€" ;
     game:release_date "30 Mar, 2020" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/261550/ss_5405bdd8c041e200facb76908526cca961d9182e.1920x1080.jpg?t=1608928062" ;
     game:website "https://www.taleworlds.com/" .
 
 game:271590 a game:game ;
+    game:category "Full controller support",
+        "Multi-player",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements" ;
     game:description "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second." ;
+    game:dlc game:dlc771300 ;
+    game:genre "Action",
+        "Adventure" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/271590/header.jpg?t=1592866696" ;
     game:name "Grand Theft Auto V" ;
+    game:platform "windows" ;
+    game:price "R$ 34,99" ;
     game:release_date "13 Apr, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/271590/ss_32aa18ab3175e3002217862dd5917646d298ab6b.1920x1080.jpg?t=1592866696" ;
     game:website "http://www.rockstargames.com/V/" .
 
 game:272060 a game:game ;
+    game:category "Single-player" ;
     game:description "How long has it been? A man sits in a distant getaway cabin waiting for his wife Serena. Where is she? Things in the cabin evoke memories, and the husband comes to a disturbing realization... This short point-and-click adventure is the result of a massive collaborative effort between dozens of fans and designers of adventure games." ;
+    game:genre "Adventure",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/272060/header.jpg?t=1447360032" ;
     game:name "Serena" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "30 Jan, 2014" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/272060/ss_cc2138a520387bf44cd83d96368ccd09a871b267.1920x1080.jpg?t=1447360032" ;
     game:website "http://waitingforserena.com" .
 
 game:273110 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Counter-Strike Nexon: Studio is a Free to Play MMOFPS offering competitive PvP and PvE action including content from the original Counter-Strike and all new game modes, map creation function, weapons, and hordes of Zombies!" ;
+    game:genre "Action",
+        "Casual",
+        "Free to Play",
+        "Massively Multiplayer" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/273110/header_alt_assets_4.jpg?t=1608713475" ;
     game:name "Counter-Strike Nexon: Studio" ;
+    game:platform "windows" ;
     game:release_date "7 Oct, 2014" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/273110/ss_b09114408fe1a5a32eae3eae6f628e7a207cafef.1920x1080.jpg?t=1608713475" ;
     game:website "None" .
 
 game:278360 a game:game ;
+    game:category "Full controller support",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "A Story About My Uncle is a first person platforming adventure game about a boy who searches for his lost uncle, and ends up in a world he couldn’t imagine existed. The movement is a crucial part of the games core gameplay – focusing on swinging through the world with a grappling hook that gives the player a wonderful sense of speed and..." ;
+    game:genre "Adventure",
+        "Casual",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/278360/header.jpg?t=1589403981" ;
     game:name "A Story About My Uncle" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "3,12€" ;
     game:release_date "28 May, 2014" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/278360/ss_c1e028877064894a0d11f4825cf63fb41d912699.1920x1080.jpg?t=1589403981" ;
     game:website "http://gonenorthgames.com/games/a-story-about-my-uncle/" .
 
 game:285800 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Leaderboards",
+        "Steam Trading Cards" ;
     game:description "Braveland is a turn-based game inspired by old-school strategies with hexagonal battlefield. You will start as a humble warrior's son whose village was cruelly raided and will end as talented commander of your army." ;
+    game:genre "Adventure",
+        "Casual",
+        "Indie",
+        "RPG",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/285800/header.jpg?t=1572885919" ;
     game:name "Braveland" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,39€" ;
     game:release_date "17 Mar, 2014" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/285800/ss_4b94ff8f6bbff595233b9752306f387871ce54f3.1920x1080.jpg?t=1572885919" ;
     game:website "http://www.tortugateam.com/" .
 
 game:291480 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Warface is a contemporary MMO first person shooter with millions of fans around the world. It offers intense PvP modes, compelling PvE missions and raids that you can challenge with five diverse classes and a colossal customizable arsenal." ;
+    game:dlc game:dlc1023930,
+        game:dlc1052630,
+        game:dlc1053550,
+        game:dlc1053570,
+        game:dlc1120260,
+        game:dlc1120290,
+        game:dlc1182230,
+        game:dlc1370080,
+        game:dlc1370100,
+        game:dlc1370230,
+        game:dlc1370260,
+        game:dlc962430 ;
+    game:genre "Action",
+        "Free to Play",
+        "Massively Multiplayer",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/291480/header.jpg?t=1608713433" ;
     game:name "Warface" ;
+    game:platform "windows" ;
     game:release_date "1 Jul, 2014" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/291480/ss_bbd5eabdeb5756f9b16b40a49fb4ad3f678fa57b.1920x1080.jpg?t=1608713433" ;
     game:website "https://warface.com/" .
 
 game:291550 a game:game ;
+    game:category "Co-op",
+        "Cross-Platform Multiplayer",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Shared/Split Screen",
+        "Shared/Split Screen Co-op",
+        "Shared/Split Screen PvP",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "An epic platform fighter for up to 8 players online or locally. Try casual free-for-alls, ranked matches, or invite friends to a private room. And it's free! Play cross-platform with millions of players on PS4, Xbox One, Nintendo Switch, iOS, Android and Steam! Frequent updates. Over fifty Legends." ;
+    game:dlc game:dlc1353520,
+        game:dlc1353522,
+        game:dlc1382220,
+        game:dlc298641 ;
+    game:genre "Action",
+        "Free to Play",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/291550/header.jpg?t=1608332244" ;
     game:name "Brawlhalla" ;
+    game:platform "mac",
+        "windows" ;
     game:release_date "17 Oct, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/291550/ss_82fb3eb44daef1e1bfebb9522beed6f5f6703b19.1920x1080.jpg?t=1608332244" ;
     game:website "http://www.brawlhalla.com" .
 
 game:292030 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "As war rages on throughout the Northern Realms, you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon that can alter the shape of the world." ;
+    game:dlc game:dlc1229320,
+        game:dlc1233280,
+        game:dlc1233340,
+        game:dlc355880,
+        game:dlc370000,
+        game:dlc370001,
+        game:dlc370002,
+        game:dlc370003,
+        game:dlc373950,
+        game:dlc373951,
+        game:dlc376390,
+        game:dlc376391,
+        game:dlc378640,
+        game:dlc378641,
+        game:dlc378642,
+        game:dlc378643,
+        game:dlc378644,
+        game:dlc378645,
+        game:dlc378646,
+        game:dlc378647,
+        game:dlc378648,
+        game:dlc378649 ;
+    game:genre "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/292030/header.jpg?t=1607418742" ;
     game:name "The Witcher® 3: Wild Hunt" ;
+    game:platform "windows" ;
+    game:price "8,99€" ;
     game:release_date "18 May, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.1920x1080.jpg?t=1607418742" ;
     game:website "http://www.thewitcher.com" .
 
 game:30 a game:game ;
+    game:category "Multi-player",
+        "Valve Anti-Cheat enabled" ;
     game:description "Enlist in an intense brand of Axis vs. Allied teamplay set in the WWII European Theatre of Operations. Players assume the role of light/assault/heavy infantry, sniper or machine-gunner class, each with a unique arsenal of historical weaponry at their disposal. Missions are based on key historical operations." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/30/header.jpg?t=1512413490" ;
     game:name "Day of Defeat" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "0,79€" ;
     game:release_date "1 May, 2003" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/30/0000000169.1920x1080.jpg?t=1512413490" ;
     game:website "http://www.dayofdefeat.com/" .
 
 game:300 a game:game ;
+    game:category "Cross-Platform Multiplayer",
+        "Includes Source SDK",
+        "Multi-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Valve Anti-Cheat enabled" ;
     game:description "Valve's WWII Multiplayer Classic - Now available for Mac." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/300/header.jpg?t=1570137070" ;
     game:name "Day of Defeat: Source" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "12 Jul, 2010" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/300/0000000023.1920x1080.jpg?t=1570137070" ;
     game:website "http://www.dayofdefeat.com/" .
 
 game:301520 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Build insane, fully customisable robot battle vehicles that drive, hover, walk and fly in the free-to-play action game Robocraft. Add weapons from the future and jump in the driving seat as you take your creation into battle against other players online!" ;
+    game:dlc game:dlc490330,
+        game:dlc513430,
+        game:dlc570960 ;
+    game:genre "Action",
+        "Free to Play",
+        "Indie",
+        "Massively Multiplayer",
+        "RPG",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/301520/header.jpg?t=1606218942" ;
     game:name "Robocraft" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "24 Aug, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/301520/ss_bb5b383f92f6f5f850bada4b5d93ad5b73b9bc36.1920x1080.jpg?t=1606218942" ;
     game:website "http://robocraftgame.com" .
 
 game:304050 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Grab your friends, hone your blades, and set off for adventure in Trove, the ultimate action MMO!" ;
+    game:dlc game:dlc1081000,
+        game:dlc1167310,
+        game:dlc380231,
+        game:dlc462050,
+        game:dlc462920,
+        game:dlc658000,
+        game:dlc658001,
+        game:dlc693160,
+        game:dlc789530,
+        game:dlc807020,
+        game:dlc807080,
+        game:dlc881590,
+        game:dlc881591,
+        game:dlc914340 ;
+    game:genre "Action",
+        "Adventure",
+        "Casual",
+        "Free to Play",
+        "Massively Multiplayer",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/304050/header.jpg?t=1608110793" ;
     game:name "Trove" ;
+    game:platform "windows" ;
     game:release_date "9 Jul, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/304050/ss_7e39336bc0debac0d73b26c0c53038378762d30b.1920x1080.jpg?t=1608110793" ;
     game:website "http://www.trionworlds.com/trove/?affiliateId=steam" .
 
 game:304930 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "Includes level editor",
+        "LAN Co-op",
+        "LAN PvP",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "You're a survivor in the zombie infested ruins of society, and must work with your friends and forge alliances to remain among the living." ;
+    game:dlc game:dlc306460 ;
+    game:genre "Action",
+        "Adventure",
+        "Casual",
+        "Free to Play",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/304930/header.jpg?t=1590451726" ;
     game:name "Unturned" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "7 Jul, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/304930/ss_a2d8ffa4eaff717539c1fd9d3cd0440691c6fc81.1920x1080.jpg?t=1590451726" ;
     game:website "http://smartlydressedgames.com/" .
 
 game:319630 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Episode 1 now FREE! Life is Strange is an award-winning and critically acclaimed episodic adventure game that allows the player to rewind time and affect the past, present and future." ;
+    game:dlc game:dlc432670 ;
+    game:genre "Action",
+        "Adventure" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/319630/header.jpg?t=1592488448" ;
     game:name "Life is Strange - Episode 1" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "29 Jan, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/319630/ss_d74ebed52e05e7c22937e53fcf6c7bf1de70ada1.1920x1080.jpg?t=1592488448" ;
     game:website "http://www.lifeisstrange.com" .
 
 game:320 a game:game ;
+    game:category "Includes Source SDK",
+        "Multi-player",
+        "Valve Anti-Cheat enabled" ;
     game:description "Fast multiplayer action set in the Half-Life 2 universe! HL2's physics adds a new dimension to deathmatch play. Play straight deathmatch or try Combine vs. Resistance teamplay. Toss a toilet at your friend today!" ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/320/header.jpg?t=1602536087" ;
     game:name "Half-Life 2: Deathmatch" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "0,79€" ;
     game:release_date "1 Nov, 2004" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/320/ss_09a55c755073d11c5c708da922abd9005546a5ee.1920x1080.jpg?t=1602536087" ;
     game:website "None" .
 
 game:322330 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Don't Starve Together is the standalone multiplayer expansion of the uncompromising survival game Don't Starve." ;
+    game:dlc game:dlc1051700,
+        game:dlc1084430,
+        game:dlc1167330,
+        game:dlc1167510,
+        game:dlc1172860,
+        game:dlc1205500,
+        game:dlc1205501,
+        game:dlc1230830,
+        game:dlc1272440,
+        game:dlc1289760,
+        game:dlc1338540,
+        game:dlc1447360,
+        game:dlc798740,
+        game:dlc798750,
+        game:dlc840750,
+        game:dlc840760,
+        game:dlc840770,
+        game:dlc962960,
+        game:dlc974740,
+        game:dlc981700,
+        game:dlc981701,
+        game:dlc981702,
+        game:dlc987340 ;
+    game:genre "Adventure",
+        "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/322330/header_alt_assets_0.jpg?t=1608060905" ;
     game:name "Don't Starve Together" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "5,09€" ;
     game:release_date "21 Apr, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/322330/ss_11dc14670f703a99884bbe479205727a3776d7b3.1920x1080.jpg?t=1608060905" ;
     game:website "http://www.dontstarvegame.com" .
 
 game:333930 a game:game ;
+    game:category "In-App Purchases",
+        "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Work together or die alone! Fight to restore peace to London or tear it down for profit in the most challenging team based shooter around." ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/333930/header.jpg?t=1591272761" ;
     game:name "Dirty Bomb®" ;
+    game:platform "windows" ;
     game:release_date "Jun 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/333930/ss_876d4708070df156b96759c165646d39aff6ec7f.1920x1080.jpg?t=1591272761" ;
     game:website "http://www.dirtybomb.com/" .
 
 game:340 a game:game ;
+    game:category "Commentary available",
+        "Remote Play Together",
+        "Single-player" ;
     game:description "Originally planned as a section of the Highway 17 chapter of Half-Life 2, Lost Coast is a playable technology showcase that introduces High Dynamic Range lighting to the Source engine." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/340/header.jpg?t=1571757270" ;
     game:name "Half-Life 2: Lost Coast" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "27 Oct, 2005" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/340/0000000010.1920x1080.jpg?t=1571757270" ;
     game:website "http://www.half-life2.com" .
 
 game:346110 a game:game ;
+    game:category "MMO",
+        "Remote Play на планшете",
+        "Steam Cloud",
+        "Включает редактор уровней",
+        "Для нескольких игроков",
+        "Для одного игрока",
+        "Достижения Steam",
+        "Имеется античит Valve",
+        "Контроллер (полностью)",
+        "Кооперативная игра",
+        "Мастерская Steam" ;
     game:description "Будучи выброшенным голым на берег таинственного острова, голодая и замерзая, вам придется заниматься ремеслом, охотой и строительством, чтобы выжить. Используйте опыт и ловкость, чтобы приручать, разводить и ездить на первобытных существах, живущих в ARK." ;
+    game:dlc game:dlc1100810,
+        game:dlc1113410,
+        game:dlc1270830,
+        game:dlc473850,
+        game:dlc508150,
+        game:dlc512540,
+        game:dlc642250,
+        game:dlc696680,
+        game:dlc708770,
+        game:dlc887380 ;
+    game:genre "Инди",
+        "Многопользовательские игры",
+        "Приключенческие игры",
+        "Ролевые игры",
+        "Экшены" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/346110/header_alt_assets_8.jpg?t=1608086122" ;
     game:name "ARK: Survival Evolved" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "10,99€" ;
     game:release_date "27 авг. 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/346110/ss_2fd997a2f7151cb2187043a1f41589cc6a9ebf3a.1920x1080.jpg?t=1608086122" ;
     game:website "http://www.playark.com" .
 
 game:359550 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Trading Cards" ;
     game:description "Tom Clancy's Rainbow Six Siege is the latest installment of the acclaimed first-person shooter franchise developed by the renowned Ubisoft Montreal studio." ;
+    game:dlc game:dlc1214420,
+        game:dlc377560,
+        game:dlc417461,
+        game:dlc417462,
+        game:dlc417463,
+        game:dlc417464,
+        game:dlc417465,
+        game:dlc450790,
+        game:dlc455570,
+        game:dlc455572,
+        game:dlc568940,
+        game:dlc568950,
+        game:dlc568960,
+        game:dlc568970,
+        game:dlc568980 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/359550/header.jpg?t=1606776740" ;
     game:name "Tom Clancy's Rainbow Six® Siege" ;
+    game:platform "windows" ;
+    game:price "$7.99" ;
     game:release_date "Dec 1, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/359550/ss_79af6b4e7ea15b745c0c315e4ae8f7450bb64f58.1920x1080.jpg?t=1606776740" ;
     game:website "http://rainbow6.ubi.com/" .
 
 game:360 a game:game ;
+    game:category "Multi-player",
+        "Valve Anti-Cheat enabled" ;
     game:description "Half-Life Deathmatch: Source is a recreation of the first multiplayer game set in the Half-Life universe. Features all the classic weapons and most-played maps, now running on the Source engine." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/360/header.jpg?t=1567240329" ;
     game:name "Half-Life Deathmatch: Source" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "1 May, 2006" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/360/ss_7a571ed8e766ab8cf9913c1000a3dbf9308550b7.1920x1080.jpg?t=1567240329" ;
     game:website "None" .
 
 game:363970 a game:game ;
+    game:category "In-App Purchases",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Ever wondered what one quadrillion damage per second feels like? Wonder no more! Embark on your quest to attain it today! Start out by clicking on the monster to kill them, and get their gold. Spend that gold on hiring new heroes and get more damage. The more damage you deal, the more gold you will get." ;
+    game:dlc game:dlc447220,
+        game:dlc556650,
+        game:dlc565261,
+        game:dlc591620,
+        game:dlc702750 ;
+    game:genre "Adventure",
+        "Casual",
+        "Free to Play",
+        "Indie",
+        "RPG",
+        "Simulation",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/363970/header.jpg?t=1512177483" ;
     game:name "Clicker Heroes" ;
+    game:platform "mac",
+        "windows" ;
     game:release_date "13 May, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/363970/ss_658232e0bd3203fb169c94ffc2e571ecb01b3bdb.1920x1080.jpg?t=1512177483" ;
     game:website "http://clickerheroes.com" .
 
 game:370910 a game:game ;
+    game:category "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Set in the 90's, Kathy Rain tells the story of a strong-willed journalism major who has to come to terms with her own troubled past as she investigates the mysterious death of her recently deceased grandfather." ;
+    game:genre "Adventure",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/370910/header.jpg?t=1599807548" ;
     game:name "Kathy Rain" ;
+    game:platform "mac",
+        "windows" ;
+    game:price "3,74€" ;
     game:release_date "5 May, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/370910/ss_1dea60802500d423958e6b8c37257a4acf3ae423.1920x1080.jpg?t=1599807548" ;
     game:website "http://kathyraingame.com" .
 
 game:377160 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud" ;
     game:description "Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming." ;
+    game:dlc game:dlc404090,
+        game:dlc435870,
+        game:dlc435880,
+        game:dlc435881,
+        game:dlc480630,
+        game:dlc480631,
+        game:dlc490650,
+        game:dlc540810,
+        game:dlc598110 ;
+    game:genre "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/377160/header.jpg?t=1588615523" ;
     game:name "Fallout 4" ;
+    game:platform "windows" ;
+    game:price "8,99€" ;
     game:release_date "9 Nov, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/377160/ss_f7861bd71e6c0c218d8ff69fb1c626aec0d187cf.1920x1080.jpg?t=1588615523" ;
     game:website "http://www.fallout4.com" .
 
 game:381210 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught and killed." ;
+    game:dlc game:dlc1009820,
+        game:dlc1009821,
+        game:dlc1089270,
+        game:dlc1135280,
+        game:dlc1199880,
+        game:dlc1251000,
+        game:dlc1324970,
+        game:dlc1408020,
+        game:dlc1474030,
+        game:dlc492140,
+        game:dlc509060,
+        game:dlc530710,
+        game:dlc530711,
+        game:dlc554380,
+        game:dlc554381,
+        game:dlc573940,
+        game:dlc577901,
+        game:dlc582600,
+        game:dlc627510,
+        game:dlc661770,
+        game:dlc700280,
+        game:dlc700282,
+        game:dlc750381,
+        game:dlc799200,
+        game:dlc925750,
+        game:dlc971790 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/381210/header.jpg?t=1606845070" ;
     game:name "Dead by Daylight" ;
+    game:platform "windows" ;
+    game:price "7,99€" ;
     game:release_date "14 Jun, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/381210/ss_5d66c65ae32b7dd265c5eccf0f38ae3e21f54351.1920x1080.jpg?t=1606845070" ;
     game:website "http://www.deadbydaylight.com" .
 
 game:386360 a game:game ;
+    game:category "Multi-player",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Join 35+ million players in SMITE, the Battleground of the Gods! Wield Thor’s hammer, turn your foes to stone as Medusa, or flex your divine power as one of 100+ other mythological icons. Become a God and play FREE today!" ;
+    game:dlc game:dlc1212080,
+        game:dlc1212090,
+        game:dlc1446170,
+        game:dlc387440,
+        game:dlc969590 ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/386360/header.jpg?t=1608058515" ;
     game:name "SMITE®" ;
+    game:platform "windows" ;
     game:release_date "8 Sep, 2015" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/386360/ss_03041b0222a512005b1f38ac0da7f42cc4c1283f.1920x1080.jpg?t=1608058515" ;
     game:website "https://www.smitegame.com" .
 
 game:387990 a game:game ;
+    game:category "Co-op",
+        "Includes level editor",
+        "Multi-player",
+        "Online Co-op",
+        "Single-player",
+        "Steam Cloud",
+        "Steam Workshop" ;
     game:description "Enter the creative paradise of Scrap Mechanic! Build fantastic machines, go on adventures with your friends and defend against waves of evil Farmbots in this imaginative multiplayer survival sandbox. With Scrap Mechanic’s powerful creation tools you can engineer your own adventures!" ;
+    game:genre "Action",
+        "Adventure",
+        "Early Access",
+        "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/387990/header.jpg?t=1593703247" ;
     game:name "Scrap Mechanic" ;
+    game:platform "windows" ;
+    game:price "13,39€" ;
     game:release_date "19 Jan, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/387990/ss_55bea7e73e0e28b62377af9602cb4ce68c793068.1920x1080.jpg?t=1593703247" ;
     game:website "http://www.scrapmechanic.com" .
 
 game:400 a game:game ;
+    game:category "Captions available",
+        "Commentary available",
+        "Includes Source SDK",
+        "Includes level editor",
+        "Partial Controller Support",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements" ;
     game:description "Portal&trade; is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay." ;
+    game:dlc game:dlc323170 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/400/header.jpg?t=1608593358" ;
     game:name "Portal" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "10 Oct, 2007" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/400/0000002582.1920x1080.jpg?t=1608593358" ;
     game:website "http://www.whatistheorangebox.com/" .
 
 game:4000 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "Cross-Platform Multiplayer",
+        "Includes level editor",
+        "LAN Co-op",
+        "LAN PvP",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We give you the tools and leave you to play." ;
+    game:genre "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/4000/header.jpg?t=1601306982" ;
     game:name "Garry's Mod" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "6,69€" ;
     game:release_date "29 Nov, 2006" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/4000/ss_ff27d52a103d1685e4981673c4f700b860cb23de.1920x1080.jpg?t=1601306982" ;
     game:website "http://gmod.facepunch.com" .
 
 game:413150 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "LAN Co-op",
+        "Multi-player",
+        "Online Co-op",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Shared/Split Screen",
+        "Shared/Split Screen Co-op",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?" ;
+    game:dlc game:dlc440820 ;
+    game:genre "Indie",
+        "RPG",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg?t=1608624324" ;
     game:name "Stardew Valley" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "9,37€" ;
     game:release_date "26 Feb, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg?t=1608624324" ;
     game:website "http://www.stardewvalley.net" .
 
 game:417910 a game:game ;
+    game:category "In-App Purchases",
+        "Multi-player",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Stats",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "First, realistic PvP brawling game for up to 8 vs 8 players with original, dynamic combat system and fast, round based battles. Create and develop Your character. Earn new skills and items that helps You beat Your opponents. Gather Your friends and fight together in a clan." ;
+    game:dlc game:dlc559860,
+        game:dlc572310,
+        game:dlc572311 ;
+    game:genre "Action",
+        "Massively Multiplayer",
+        "Simulation",
+        "Sports" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/417910/header.jpg?t=1600256776" ;
     game:name "Street Warriors Online" ;
+    game:platform "windows" ;
+    game:price "1,99€" ;
     game:release_date "16 Dec, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/417910/ss_cfff84247b42b5e887a8433444dc8d8717cf121e.1920x1080.jpg?t=1600256776" ;
     game:website "http://streetwarriorsonline.com/" .
 
 game:431960 a game:game ;
+    game:category "Includes level editor",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Use stunning live wallpapers on your desktop. Animate your own images to create new wallpapers or import videos/websites and share them on the Steam Workshop!" ;
+    game:genre "Animation & Modeling",
+        "Casual",
+        "Design & Illustration",
+        "Indie",
+        "Photo Editing",
+        "Utilities" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/431960/header.jpg?t=1604592117" ;
     game:name "Wallpaper Engine" ;
+    game:platform "windows" ;
+    game:price "3,99€" ;
     game:release_date "16 Nov, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/431960/ss_5aec3335b1ae2300aa91da990d7e24541ddcf68d.1920x1080.jpg?t=1604592117" ;
     game:website "https://www.wallpaperengine.io" .
 
 game:433850 a game:game ;
+    game:category "In-App Purchases",
+        "Multi-player",
+        "Online PvP",
+        "PvP" ;
     game:description "Z1 Battle Royale is a Free to Play, fast-paced, action arcade, competitive Battle Royale. Staying true to its &quot;King of the Kill&quot; roots, the game has been revamped and restored to the classic feel, look, and gameplay everyone fell in love with. Play solo, duos, or fives and be the last ones standing." ;
+    game:genre "Action",
+        "Adventure",
+        "Free to Play",
+        "Massively Multiplayer" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/433850/header.jpg?t=1579626820" ;
     game:name "Z1 Battle Royale" ;
+    game:platform "windows" ;
     game:release_date "28 Feb, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/433850/ss_68cba3b0f7642531f828ed2accedca1db6f39f6f.1920x1080.jpg?t=1579626820" ;
     game:website "https://www.h1z1.com" .
 
 game:438100 a game:game ;
+    game:category "Co-op",
+        "Cross-Platform Multiplayer",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Single-player" ;
     game:description "Join our growing community as you explore, play, and help craft the future of social VR. Create worlds and custom avatars. Welcome to VRChat." ;
+    game:genre "Adventure",
+        "Casual",
+        "Early Access",
+        "Free to Play",
+        "Massively Multiplayer",
+        "Simulation",
+        "Sports" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/438100/header.jpg?t=1597188061" ;
     game:name "VRChat" ;
+    game:platform "windows" ;
     game:release_date "1 Feb, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/438100/ss_1577335ddadd96c338c16a747758290b4214eb85.1920x1080.jpg?t=1597188061" ;
     game:website "http://www.vrchat.com" .
 
 game:440 a game:game ;
+    game:category "Captions available",
+        "Commentary available",
+        "Cross-Platform Multiplayer",
+        "In-App Purchases",
+        "Includes level editor",
+        "Multi-player",
+        "Partial Controller Support",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Stats",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats!" ;
+    game:dlc game:dlc629330 ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/440/header.jpg?t=1592263852" ;
     game:name "Team Fortress 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "10 Oct, 2007" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/440/ss_ea21f7bbf4f79bada4554df5108d04b6889d3453.1920x1080.jpg?t=1592263852" ;
     game:website "http://www.teamfortress.com/" .
 
 game:44350 a game:game ;
+    game:category "Full controller support",
+        "Multi-player",
+        "Remote Play Together",
+        "Remote Play on TV",
+        "Shared/Split Screen",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Leaderboards",
+        "Steam Trading Cards",
+        "Valve Anti-Cheat enabled" ;
     game:description "Be fast, be first and be famous as the race returns in GRID 2, the sequel to the BAFTA-award winning, multi-million selling Race Driver: GRID." ;
+    game:genre "Racing",
+        "Sports" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/44350/header.jpg?t=1571948291" ;
     game:name "GRID 2" ;
+    game:platform "windows" ;
     game:release_date "" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/44350/ss_860483b888be640c3fe858d21a3f344b5d40d485.1920x1080.jpg?t=1571948291" ;
     game:website "http://www.gridgame.com/" .
 
 game:444090 a game:game ;
+    game:category "In-App Purchases",
+        "Multi-player",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Join 25+ million players in Paladins, the free-to-play fantasy team-based shooter sensation. Wield guns and magic as a legendary Champion of the Realm, customizing your core set of abilities to play exactly how you want to play." ;
+    game:dlc game:dlc1271270,
+        game:dlc803381,
+        game:dlc995960,
+        game:dlc995970 ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/444090/header.jpg?t=1603908027" ;
     game:name "Paladins®" ;
+    game:platform "windows" ;
     game:release_date "8 May, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/444090/ss_846b1464dc9242bc44c9b43547c7b5567cbbdf0c.1920x1080.jpg?t=1603908027" ;
     game:website "http://www.paladins.com/" .
 
 game:444200 a game:game ;
+    game:category "Co-op",
+        "Cross-Platform Multiplayer",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Steam Trading Cards" ;
     game:description "A winter fairy tale and holiday madness have blended together. A reindeer tank, air battles on a snow-covered map, and a whole train of gifts await!" ;
+    game:dlc game:dlc1072560,
+        game:dlc1072561,
+        game:dlc1072562,
+        game:dlc1153560,
+        game:dlc1174470 ;
+    game:genre "Action",
+        "Free to Play",
+        "Massively Multiplayer" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/444200/header.jpg?t=1607584746" ;
     game:name "World of Tanks Blitz" ;
+    game:platform "mac",
+        "windows" ;
     game:release_date "9 Nov, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/444200/ss_5f09a626524207ccba9cf3bcfed94561dcb4a3cb.1920x1080.jpg?t=1607584746" ;
     game:website "http://wotblitz.com/" .
 
 game:477160 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Remote Play Together",
+        "Remote Play on TV",
+        "Shared/Split Screen",
+        "Shared/Split Screen Co-op",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "Human: Fall Flat is a hilarious, light-hearted platformer set in floating dreamscapes that can be played solo or with up to 8 players online. Free new levels keep its vibrant community rewarded." ;
+    game:dlc game:dlc632870 ;
+    game:genre "Adventure",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/477160/header_alt_assets_13.jpg?t=1608677870" ;
     game:name "Human: Fall Flat" ;
+    game:platform "mac",
+        "windows" ;
+    game:price "5,99€" ;
     game:release_date "22 Jul, 2016" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/477160/ss_09c8a7ab2746013386f10d9333726cc1a2ea0f80.1920x1080.jpg?t=1608677870" ;
     game:website "http://www.nobrakesgames.com/human/" .
 
 game:49520 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "The Ultimate Vault Hunter’s Upgrade lets you get the most out of the Borderlands 2 experience." ;
+    game:dlc game:dlc207870,
+        game:dlc208690,
+        game:dlc213210,
+        game:dlc213230,
+        game:dlc213250,
+        game:dlc213780,
+        game:dlc218550,
+        game:dlc218560,
+        game:dlc224140,
+        game:dlc224141,
+        game:dlc224142,
+        game:dlc224143,
+        game:dlc224144,
+        game:dlc224145,
+        game:dlc224160,
+        game:dlc224161,
+        game:dlc224162,
+        game:dlc224163,
+        game:dlc224164,
+        game:dlc224165,
+        game:dlc224166,
+        game:dlc224167,
+        game:dlc224168,
+        game:dlc224180,
+        game:dlc224200,
+        game:dlc225820,
+        game:dlc225821,
+        game:dlc225822,
+        game:dlc225823,
+        game:dlc225824,
+        game:dlc225825,
+        game:dlc225826,
+        game:dlc225827,
+        game:dlc225828,
+        game:dlc225829,
+        game:dlc225830,
+        game:dlc225831,
+        game:dlc225832,
+        game:dlc225833,
+        game:dlc225834,
+        game:dlc230090,
+        game:dlc245890,
+        game:dlc245910,
+        game:dlc245930,
+        game:dlc245950,
+        game:dlc245970,
+        game:dlc872280,
+        game:dlc941170 ;
+    game:genre "Action",
+        "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/49520/header.jpg?t=1590450074" ;
     game:name "Borderlands 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "7,49€" ;
     game:release_date "20 Sep, 2012" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/49520/ss_6734eaa79dcd0fe53971fbd50d20b5d0d45f4809.1920x1080.jpg?t=1590450074" ;
     game:website "https://www.2k.com/en-US/game/borderlands-2/" .
 
 game:50 a game:game ;
+    game:category "Multi-player",
+        "Remote Play Together",
+        "Single-player",
+        "Valve Anti-Cheat enabled" ;
     game:description "Return to the Black Mesa Research Facility as one of the military specialists assigned to eliminate Gordon Freeman. Experience an entirely new episode of single player action. Meet fierce alien opponents, and experiment with new weaponry. Named 'Game of the Year' by the Academy of Interactive Arts and Sciences." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/50/header.jpg?t=1579628243" ;
     game:name "Half-Life: Opposing Force" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "0,79€" ;
     game:release_date "1 Nov, 1999" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/50/0000000155.1920x1080.jpg?t=1579628243" ;
     game:website "None" .
 
 game:500 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "Commentary available",
+        "Full controller support",
+        "Includes Source SDK",
+        "Multi-player",
+        "Remote Play Together",
+        "Remote Play on TV",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Leaderboards",
+        "Valve Anti-Cheat enabled" ;
     game:description "From Valve (the creators of Counter-Strike, Half-Life and more) comes Left 4 Dead, a co-op action horror game for the PC and Xbox 360 that casts up to four players in an epic struggle for survival against swarming zombie hordes and terrifying mutant monsters." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/500/header.jpg?t=1587582567" ;
     game:name "Left 4 Dead" ;
+    game:platform "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "17 Nov, 2008" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/500/0000006028.1920x1080.jpg?t=1587582567" ;
     game:website "http://www.l4d.com/" .
 
 game:532210 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "After a tragic incident, brothers Sean and Daniel Diaz run away from home. Fearing the police, and dealing with Daniel's new telekinetic power, the boys head to Mexico. Each stop on their journey brings new friends and new challenges." ;
+    game:dlc game:dlc1181740,
+        game:dlc872080,
+        game:dlc895490,
+        game:dlc895491,
+        game:dlc895492,
+        game:dlc895493 ;
+    game:genre "Adventure" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/532210/header.jpg?t=1600359009" ;
     game:name "Life is Strange 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "26 Sep, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/532210/ss_3907bb1ea3aac991b272ce9a7bd5b492fc7a768d.1920x1080.jpg?t=1600359009" ;
     game:website "https://www.lifeisstrange.com" .
 
 game:550 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "Commentary available",
+        "Full controller support",
+        "Includes Source SDK",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/550/header.jpg?t=1601578341" ;
     game:name "Left 4 Dead 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "16 Nov, 2009" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/550/ss_2eae29fbdfe8e5e8999b96d8bb28c5db70507968.1920x1080.jpg?t=1601578341" ;
     game:website "http://www.l4d.com" .
 
 game:550650 a game:game ;
+    game:category "In-App Purchases",
+        "Multi-player",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Black Squad is a free-to-play military first-person-shooter. Players can master their skills and show off their strategies with a wide range of game maps, modes, and weapons to choose from. Join thousands of FPS players worldwide in one of the most played games on Steam!" ;
+    game:dlc game:dlc1106070,
+        game:dlc654180,
+        game:dlc654189 ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/550650/header.jpg?t=1606887592" ;
     game:name "Black Squad" ;
+    game:platform "windows" ;
     game:release_date "26 Jun, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/550650/ss_ab8bb299401356bca496fd4c67510ca69c0c1320.1920x1080.jpg?t=1606887592" ;
     game:website "http://www.blacksquad.com/" .
 
 game:552990 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Trading Cards" ;
     game:description "Experience epic, free-to-play naval combat when you helm one of over 300 historic vessels in the exciting balance of strategy and real-time combat that World of Warships offers. Outfit your fleet with flags, camouflages, modifications, talented Commanders, and more!" ;
+    game:dlc game:dlc1005550,
+        game:dlc1224060,
+        game:dlc844890,
+        game:dlc845000,
+        game:dlc845010,
+        game:dlc845020,
+        game:dlc934640,
+        game:dlc934650,
+        game:dlc934660,
+        game:dlc934680,
+        game:dlc934690 ;
+    game:genre "Action",
+        "Free to Play",
+        "Massively Multiplayer",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/552990/header.jpg?t=1608741995" ;
     game:name "World of Warships" ;
+    game:platform "mac",
+        "windows" ;
     game:release_date "15 Nov, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/552990/ss_60670465328504fc2ab215c5687a035fdc065ed2.1920x1080.jpg?t=1608741995" ;
     game:website "https://steam.worldofwarships.com/" .
 
 game:570 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "Multi-player",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "SteamVR Collectibles",
+        "Valve Anti-Cheat enabled" ;
     game:description "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own." ;
+    game:dlc game:dlc1241930,
+        game:dlc652720 ;
+    game:genre "Action",
+        "Free to Play",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1608587587" ;
     game:name "Dota 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "9 Jul, 2013" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/570/ss_86d675fdc73ba10462abb8f5ece7791c5047072c.1920x1080.jpg?t=1608587587" ;
     game:website "http://www.dota2.com/" .
 
 game:578080 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Stats" ;
     game:description "PLAYERUNKNOWN'S BATTLEGROUNDS is a battle royale shooter that pits 100 players against each other in a struggle for survival. Gather supplies and outwit your opponents to become the last person standing." ;
+    game:dlc game:dlc1477540 ;
+    game:genre "Action",
+        "Adventure",
+        "Massively Multiplayer" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg?t=1608093288" ;
     game:name "PLAYERUNKNOWN'S BATTLEGROUNDS" ;
+    game:platform "windows" ;
+    game:price "29,99€" ;
     game:release_date "21 Dec, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/578080/ss_606cee13e97530720c678513cb1138ef9854d7d5.1920x1080.jpg?t=1608093288" ;
     game:website "http://www.pubg.com" .
 
 game:582010 a game:game ;
+    game:category "Co-op",
+        "Multi-player",
+        "Partial Controller Support",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Leaderboards",
+        "Steam Trading Cards" ;
     game:description "Welcome to a new world! In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and excitement." ;
+    game:dlc game:dlc1118010,
+        game:dlc1118012,
+        game:dlc1118013,
+        game:dlc1118014,
+        game:dlc1118015,
+        game:dlc1118017,
+        game:dlc1118018,
+        game:dlc1118019,
+        game:dlc1118022,
+        game:dlc1118023,
+        game:dlc1118024,
+        game:dlc1118025,
+        game:dlc1118026,
+        game:dlc1118029,
+        game:dlc1211170,
+        game:dlc1211171,
+        game:dlc1211172,
+        game:dlc1211173,
+        game:dlc1211174,
+        game:dlc1211175,
+        game:dlc1211176,
+        game:dlc1211177,
+        game:dlc1211178,
+        game:dlc1211179,
+        game:dlc1211200,
+        game:dlc1211201,
+        game:dlc1211202,
+        game:dlc1211203,
+        game:dlc1211204,
+        game:dlc1211205,
+        game:dlc1211206,
+        game:dlc1211207,
+        game:dlc1211208,
+        game:dlc1211209,
+        game:dlc1241260,
+        game:dlc1241261,
+        game:dlc1241262,
+        game:dlc1241263,
+        game:dlc1241264,
+        game:dlc1241265,
+        game:dlc1241266,
+        game:dlc1241267,
+        game:dlc1241268,
+        game:dlc1241269,
+        game:dlc1241270,
+        game:dlc1241271,
+        game:dlc1241272,
+        game:dlc1241273,
+        game:dlc1241274,
+        game:dlc1241275,
+        game:dlc1241276,
+        game:dlc1241277,
+        game:dlc1241278,
+        game:dlc1241279,
+        game:dlc1241280,
+        game:dlc1241281,
+        game:dlc1241282,
+        game:dlc1241283,
+        game:dlc1241284,
+        game:dlc1241285,
+        game:dlc1241286,
+        game:dlc1241287,
+        game:dlc1241288,
+        game:dlc1241289,
+        game:dlc1241290,
+        game:dlc1241291,
+        game:dlc1241292,
+        game:dlc1241293,
+        game:dlc1241294,
+        game:dlc1241295,
+        game:dlc1241296,
+        game:dlc1241297,
+        game:dlc1241298,
+        game:dlc1241299,
+        game:dlc1241300,
+        game:dlc1242740,
+        game:dlc1242741,
+        game:dlc1242742,
+        game:dlc1242743,
+        game:dlc1242744,
+        game:dlc1242745,
+        game:dlc1242746,
+        game:dlc1242747,
+        game:dlc1242748,
+        game:dlc1242749,
+        game:dlc1242750,
+        game:dlc1242751,
+        game:dlc1242752,
+        game:dlc1242753,
+        game:dlc1242754,
+        game:dlc1242755,
+        game:dlc1242756,
+        game:dlc1242757,
+        game:dlc1242758,
+        game:dlc1242759,
+        game:dlc1242760,
+        game:dlc1242761,
+        game:dlc1242762,
+        game:dlc1242763,
+        game:dlc1242764,
+        game:dlc1242765,
+        game:dlc1242766,
+        game:dlc1242767,
+        game:dlc1242768,
+        game:dlc1242769,
+        game:dlc1242770,
+        game:dlc1242771,
+        game:dlc1242772,
+        game:dlc1242773,
+        game:dlc1242774,
+        game:dlc1242775,
+        game:dlc1242776,
+        game:dlc1242777,
+        game:dlc1242778,
+        game:dlc1242779,
+        game:dlc1265470,
+        game:dlc1265471,
+        game:dlc1265472,
+        game:dlc1265473,
+        game:dlc1265474,
+        game:dlc1265475,
+        game:dlc1265476,
+        game:dlc1287050,
+        game:dlc1287051,
+        game:dlc1287052,
+        game:dlc1287053,
+        game:dlc1287054,
+        game:dlc1287055,
+        game:dlc1287056,
+        game:dlc1287057,
+        game:dlc1287058,
+        game:dlc1287059,
+        game:dlc1287060,
+        game:dlc1287061,
+        game:dlc1287062,
+        game:dlc1287063,
+        game:dlc1287064,
+        game:dlc1287065,
+        game:dlc1287066,
+        game:dlc1287067,
+        game:dlc1287068,
+        game:dlc1287069,
+        game:dlc1287070,
+        game:dlc1287071,
+        game:dlc1287072,
+        game:dlc1287073,
+        game:dlc1287074,
+        game:dlc1287075,
+        game:dlc1287076,
+        game:dlc1287081,
+        game:dlc1287082,
+        game:dlc1287083,
+        game:dlc1351860,
+        game:dlc1351861,
+        game:dlc1371400,
+        game:dlc1371401,
+        game:dlc1371402,
+        game:dlc1371403,
+        game:dlc1371404,
+        game:dlc1371405,
+        game:dlc1371406,
+        game:dlc1371407,
+        game:dlc1371408,
+        game:dlc1371409,
+        game:dlc1371420,
+        game:dlc1371421,
+        game:dlc1371422,
+        game:dlc1371423,
+        game:dlc1371424,
+        game:dlc1371425,
+        game:dlc1371426,
+        game:dlc1371427,
+        game:dlc1371428,
+        game:dlc1371429,
+        game:dlc1377530,
+        game:dlc762174,
+        game:dlc762918,
+        game:dlc762919,
+        game:dlc763695,
+        game:dlc763696,
+        game:dlc763697,
+        game:dlc763698,
+        game:dlc763699,
+        game:dlc770970,
+        game:dlc770972,
+        game:dlc770973,
+        game:dlc770974,
+        game:dlc770975,
+        game:dlc770976,
+        game:dlc770977,
+        game:dlc861870,
+        game:dlc861871,
+        game:dlc861872,
+        game:dlc891730,
+        game:dlc896580,
+        game:dlc912540,
+        game:dlc960781,
+        game:dlc974302,
+        game:dlc996740 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/582010/header.jpg?t=1602806745" ;
     game:name "Monster Hunter: World" ;
+    game:platform "windows" ;
+    game:price "19,79€" ;
     game:release_date "9 Aug, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/582010/ss_a262c53b8629de7c6547933dc0b49d31f4e1b1f1.1920x1080.jpg?t=1602806745" ;
     game:website "http://www.monsterhunterworld.com/" .
 
 game:582660 a game:game ;
+    game:category "Co-op",
+        "In-App Purchases",
+        "MMO",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "Partial Controller Support",
+        "PvP",
+        "Steam Trading Cards" ;
     game:description "Black Desert Online is a sandbox, living-world MMORPG. Experience fast-paced, action-packed combat, hunt monsters and huge bosses, fight with friends in a guild to siege nodes and conquer castles, train your life skills such as fishing, trading, crafting, cooking, and much more!" ;
+    game:dlc game:dlc1324140,
+        game:dlc1324160,
+        game:dlc1481850 ;
+    game:genre "Action",
+        "Adventure",
+        "Massively Multiplayer",
+        "RPG",
+        "Simulation",
+        "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/582660/header.jpg?t=1608632665" ;
     game:name "Black Desert Online" ;
+    game:platform "windows" ;
+    game:price "2,99€" ;
     game:release_date "24 May, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/582660/ss_36e9a41c2a147e49d661cb88c277b045c524277d.1920x1080.jpg?t=1608632665" ;
     game:website "https://www.blackdesertonline.com/" .
 
 game:588430 a game:game ;
+    game:category "Full controller support",
+        "In-App Purchases",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud" ;
     game:description "Fallout Shelter puts you in control of a state-of-the-art underground Vault from Vault-Tec. Build the perfect Vault, keep your Dwellers happy, and protect them from the dangers of the Wasteland." ;
+    game:genre "Free to Play",
+        "RPG",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/588430/header.jpg?t=1606161609" ;
     game:name "Fallout Shelter" ;
+    game:platform "windows" ;
     game:release_date "29 Mar, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/588430/ss_f1251e5d797779788ca37a325f688a48a1d4492f.1920x1080.jpg?t=1606161609" ;
     game:website "http://www.falloutshelter.com/" .
 
 game:60 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Valve Anti-Cheat enabled" ;
     game:description "A futuristic action game that challenges your agility as well as your aim, Ricochet features one-on-one and team matches played in a variety of futuristic battle arenas." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/60/header.jpg?t=1599518374" ;
     game:name "Ricochet" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "0,79€" ;
     game:release_date "1 Nov, 2000" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/60/ss_2bf674132e28385f168dbc46ff55eea7be8c8886.1920x1080.jpg?t=1599518374" ;
     game:website "None" .
 
 game:601150 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Remote Play on TV",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "The ultimate Devil Hunter is back in style, in the game action fans have been waiting for." ;
+    game:dlc game:dlc1050460,
+        game:dlc1432640,
+        game:dlc1432641,
+        game:dlc1432642,
+        game:dlc1432643,
+        game:dlc940500,
+        game:dlc940501,
+        game:dlc941950,
+        game:dlc941951,
+        game:dlc941952,
+        game:dlc941953,
+        game:dlc941954,
+        game:dlc941955,
+        game:dlc941956,
+        game:dlc941957,
+        game:dlc941958,
+        game:dlc941959,
+        game:dlc941960,
+        game:dlc941961,
+        game:dlc941962,
+        game:dlc941963,
+        game:dlc941964,
+        game:dlc941965,
+        game:dlc941966,
+        game:dlc941967,
+        game:dlc941968,
+        game:dlc941969,
+        game:dlc941970,
+        game:dlc941971,
+        game:dlc941972,
+        game:dlc941973 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/601150/header.jpg?t=1608599498" ;
     game:name "Devil May Cry 5" ;
+    game:platform "windows" ;
+    game:price "19,99€" ;
     game:release_date "7 Mar, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/601150/ss_4410bada2565843dae693b03ac3a50256ff5dd66.1920x1080.jpg?t=1608599498" ;
     game:website "http://www.capcom.co.jp/devil5/" .
 
 game:620 a game:game ;
+    game:category "Captions available",
+        "Co-op",
+        "Commentary available",
+        "Full controller support",
+        "Includes level editor",
+        "Multi-player",
+        "Online Co-op",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Shared/Split Screen",
+        "Shared/Split Screen Co-op",
+        "Single-player",
+        "Stats",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!" ;
+    game:dlc game:dlc323180 ;
+    game:genre "Action",
+        "Adventure" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/620/header.jpg?t=1587582232" ;
     game:name "Portal 2" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "18 Apr, 2011" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/620/ss_f3f6787d74739d3b2ec8a484b5c994b3d31ef325.1920x1080.jpg?t=1587582232" ;
     game:website "http://www.thinkwithportals.com/" .
 
 game:632360 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Cloud",
+        "Steam Leaderboards" ;
     game:description "Escape a chaotic alien planet by fighting through hordes of frenzied monsters – with your friends, or on your own. Combine loot in surprising ways and master each character until you become the havoc you feared upon your first crash landing." ;
+    game:dlc game:dlc1236890 ;
+    game:genre "Action",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/632360/header.jpg?t=1597330177" ;
     game:name "Risk of Rain 2" ;
+    game:platform "windows" ;
+    game:price "19,99€" ;
     game:release_date "11 Aug, 2020" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/632360/ss_2bb49071317f7b241a527cf6e7aabd2cb6af055b.1920x1080.jpg?t=1597330177" ;
     game:website "https://www.riskofrain.com/" .
 
 game:648800 a game:game ;
+    game:category "Co-op",
+        "Multi-player",
+        "Online Co-op",
+        "Online PvP",
+        "PvP",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud" ;
     game:description "Raft throws you and your friends into an epic oceanic adventure! Alone or together, players battle to survive a perilous voyage across a vast sea! Gather debris, scavenge reefs and build your own floating home, but be wary of the man-eating sharks!" ;
+    game:genre "Adventure",
+        "Early Access",
+        "Indie",
+        "Simulation" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/648800/header.jpg?t=1602795811" ;
     game:name "Raft" ;
+    game:platform "windows" ;
+    game:price "$13.39" ;
     game:release_date "May 23, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/648800/ss_c22b2ff5ba5609f74e61b5feaa5b7a1d7fd1dbd3.1920x1080.jpg?t=1602795811" ;
     game:website "http://www.raft-game.com" .
 
 game:70 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Remote Play Together",
+        "Remote Play on Phone",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Cloud",
+        "Valve Anti-Cheat enabled" ;
     game:description "Named Game of the Year by over 50 publications, Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive. Also includes an exciting multiplayer mode that allows you to play against friends and enemies around the world." ;
+    game:dlc game:dlc323130 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/70/header.jpg?t=1591048039" ;
     game:name "Half-Life" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "8 Nov, 1998" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/70/0000002354.1920x1080.jpg?t=1591048039" ;
     game:website "http://www.half-life.com/" .
 
 game:700330 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "PvP",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Valve Anti-Cheat enabled" ;
     game:description "Deep within the SCP Foundation during a containment breach, many of the anomalies have bypassed security and escaped from their chambers - without peaceful intentions. Become site personnel, a re-containment agent, or an anomalous entity and fight to take control of or escape the facility!" ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/700330/header.jpg?t=1608376504" ;
     game:name "SCP: Secret Laboratory" ;
+    game:platform "windows" ;
     game:release_date "29 Dec, 2017" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/700330/ss_515a5a12fed39fe2c7eb8f1e33d7486a24d46e17.1920x1080.jpg?t=1608376504" ;
     game:website "https://scpslgame.com/" .
 
 game:72850 a game:game ;
+    game:category "Partial Controller Support",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards",
+        "Steam Workshop" ;
     game:description "EPIC FANTASY REBORN The next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose." ;
+    game:dlc game:dlc1240360 ;
+    game:genre "RPG" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/72850/header.jpg?t=1590590362" ;
     game:name "The Elder Scrolls V: Skyrim" ;
+    game:platform "windows" ;
+    game:price "14,99€" ;
     game:release_date "10 Nov, 2011" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/72850/ss_4e95fbcf72ce2a9f86075738fa9930ef2bed1ac7.1920x1080.jpg?t=1590590362" ;
     game:website "http://elderscrolls.com/" .
 
 game:730 a game:game ;
+    game:category "Full controller support",
+        "In-App Purchases",
+        "Multi-player",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Stats",
+        "Steam Achievements",
+        "Steam Trading Cards",
+        "Steam Workshop",
+        "Valve Anti-Cheat enabled" ;
     game:description "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.)." ;
+    game:dlc game:dlc1490530 ;
+    game:genre "Action",
+        "Free to Play" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1607046958" ;
     game:name "Counter-Strike: Global Offensive" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
     game:release_date "21 Aug, 2012" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/730/ss_34090867f1a02b6c17652ba9043e3f622ed985a9.1920x1080.jpg?t=1607046958" ;
     game:website "http://blog.counter-strike.net/" .
 
 game:739630 a game:game ;
+    game:category "Compat. manette : complète",
+        "Coopération",
+        "Coopération en ligne",
+        "Multijoueur",
+        "Remote Play sur tablette",
+        "Remote Play sur téléphone",
+        "Steam Cloud",
+        "Un joueur" ;
     game:description "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost hunting equipment at your disposal in order to gather as much evidence as you can." ;
+    game:genre "Accès anticipé",
+        "Action",
+        "Indépendant" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/739630/header.jpg?t=1608651139" ;
     game:name "Phasmophobia" ;
+    game:platform "windows" ;
+    game:price "10,43€" ;
     game:release_date "18 sept. 2020" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/739630/ss_91bca60a51dce60d680a8fb4efcdecf740b3a3d1.1920x1080.jpg?t=1608651139" ;
     game:website "http://kineticgames.co.uk/" .
 
 game:755790 a game:game ;
+    game:category "Multi-player",
+        "Online PvP",
+        "PvP" ;
     game:description "Escape an astonishing disaster in Ring of Elysium, a battle royale shooter developed by Aurora Studio." ;
+    game:genre "Action",
+        "Free to Play",
+        "Massively Multiplayer" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/755790/header.jpg?t=1604493157" ;
     game:name "Ring of Elysium" ;
+    game:platform "windows" ;
     game:release_date "24 Jun, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/755790/ss_aae1e36838b7ade907811c8d1f64bd02eb62d157.1920x1080.jpg?t=1604493157" ;
     game:website "None" .
 
 game:80 a game:game ;
+    game:category "Multi-player",
+        "Single-player",
+        "Valve Anti-Cheat enabled" ;
     game:description "With its extensive Tour of Duty campaign, a near-limitless number of skirmish modes, updates and new content for Counter-Strike's award-winning multiplayer game play, plus over 12 bonus single player missions, Counter-Strike: Condition Zero is a tremendous offering of single and multiplayer content." ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/80/header.jpg?t=1602535977" ;
     game:name "Counter-Strike: Condition Zero" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,63€" ;
     game:release_date "1 Mar, 2004" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/80/0000002528.1920x1080.jpg?t=1602535977" ;
     game:website "None" .
 
 game:814380 a game:game ;
+    game:category "Full controller support",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Game of the Year - The Game Awards 2019 Best Action Game of 2019 - IGN Carve your own clever path to vengeance in the award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously." ;
+    game:genre "Action",
+        "Adventure" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/814380/header.jpg?t=1603904569" ;
     game:name "Sekiro™: Shadows Die Twice - GOTY Edition" ;
+    game:platform "windows" ;
+    game:price "38,99€" ;
     game:release_date "21 Mar, 2019" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/814380/ss_0f7b0f8ed9ffc49aba26f9328caa9a1d59ad60f0.1920x1080.jpg?t=1603904569" ;
     game:website "http://www.sekirothegame.com/" .
 
 game:863550 a game:game ;
+    game:category "Co-op",
+        "Full controller support",
+        "Multi-player",
+        "Online Co-op",
+        "Remote Play on Phone",
+        "Remote Play on TV",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Travel the globe and track your targets across exotic sandbox locations in HITMAN™ 2. From sun-drenched streets to dark and dangerous rainforests, nowhere is safe from the world’s most creative assassin, Agent 47 in the ultimate spy thriller story." ;
+    game:dlc game:dlc1131050,
+        game:dlc957690,
+        game:dlc960831,
+        game:dlc960832 ;
+    game:genre "Action" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/863550/header.jpg?t=1598895956" ;
     game:name "HITMAN™ 2" ;
+    game:platform "windows" ;
     game:release_date "13 Nov, 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/863550/ss_425ab1fa29823f7dd675cc62e5cb36260462a578.1920x1080.jpg?t=1598895956" ;
     game:website "http://www.hitman.com/" .
 
 game:8930 a game:game ;
+    game:category "Multi-player",
+        "Remote Play on Tablet",
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Steam Trading Cards" ;
     game:description "Create, discover, and download new player-created maps, scenarios, interfaces, and more!" ;
+    game:dlc game:dlc16860,
+        game:dlc16861,
+        game:dlc16862,
+        game:dlc16863,
+        game:dlc16866,
+        game:dlc16867,
+        game:dlc16868,
+        game:dlc16870,
+        game:dlc235580,
+        game:dlc235584,
+        game:dlc235585,
+        game:dlc99610,
+        game:dlc99611,
+        game:dlc99612,
+        game:dlc99614 ;
+    game:genre "Strategy" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/8930/header.jpg?t=1579731804" ;
     game:name "Sid Meier's Civilization® V" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "29,99€" ;
     game:release_date "23 Sep, 2010" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/8930/ss_7082faf1b0941ddbc4ba9dab5807a9b5e77d72f9.1920x1080.jpg?t=1579731804" ;
     game:website "http://www.civilization.com" .
 
 game:945360 a game:game ;
+    game:category "Remote Play на планшете",
+        "Remote Play на телефоне",
+        "Для нескольких игроков",
+        "Кооператив (LAN)",
+        "Кооператив (по сети)",
+        "Кооперативная игра",
+        "Кроссплатформенная игра",
+        "Против игроков",
+        "Против игроков (LAN)",
+        "Против игроков (по сети)" ;
     game:description "An online and local party game of teamwork and betrayal for 4-10 players...in space!" ;
+    game:dlc game:dlc946430,
+        game:dlc971924,
+        game:dlc971925,
+        game:dlc971995,
+        game:dlc971996,
+        game:dlc971998,
+        game:dlc971999 ;
+    game:genre "Казуальные игры" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/945360/header.jpg?t=1607727748" ;
     game:name "Among Us" ;
+    game:platform "windows" ;
+    game:price "3,19€" ;
     game:release_date "16 ноя. 2018" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/945360/ss_c80d2f3fab624b18d9531adc6957767a7fede100.1920x1080.jpg?t=1607727748" ;
     game:website "http://innersloth.com/gameAmongUs.php" .
 
 game:96000 a game:game ;
+    game:category "Single-player",
+        "Steam Trading Cards" ;
     game:description "Life on Tiny Planet was calm and carefree until a great disaster occurred - Tiny Planet was hit by a meteor! The world fell apart and now its future depends only on you! Use your imagination and creativity: in order to restore Tiny Planet and help its inhabitants you will have to fix a variety of machines and mechanisms as well as solve..." ;
+    game:genre "Adventure",
+        "Casual",
+        "Indie" ;
     game:image "https://steamcdn-a.akamaihd.net/steam/apps/96000/header.jpg?t=1569408406" ;
     game:name "The Tiny Bang Story" ;
+    game:platform "linux",
+        "mac",
+        "windows" ;
+    game:price "1,24€" ;
     game:release_date "22 Apr, 2011" ;
+    game:screenshot "https://steamcdn-a.akamaihd.net/steam/apps/96000/ss_5b8111d63971d348891f3e7b7c8662951345a609.1920x1080.jpg?t=1569408406" ;
     game:website "http://www.colibrigames.com" .
 

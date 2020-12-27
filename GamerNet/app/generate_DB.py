@@ -30,6 +30,22 @@ def generation():
             g.add((subject, NS.image, Literal(game["header_image"])))
             g.add((subject, NS.website, Literal(game["website"])))
 
+            if "screenshots" in game.keys():
+                g.add((subject, NS.screenshot, Literal(game["screenshots"][0]["path_full"])))
+            for platform in game["platforms"]:
+                if game["platforms"][platform]:
+                    g.add((subject, NS.platform, Literal(platform)))
+            for category in game["categories"]:
+                g.add((subject, NS.category, Literal(category["description"])))
+            if "genres" in game.keys():
+                for genre in game["genres"]:
+                    g.add((subject, NS.genre, Literal(genre["description"])))
+            if "dlc" in game.keys():
+                for dlc in game["dlc"]:
+                    g.add((subject, NS.dlc, NS["dlc" + str(dlc)]))
+            if "price_overview" in game.keys():
+                g.add((subject, NS.price, Literal(game["price_overview"]["final_formatted"])))
+
             count += 1
 
 
