@@ -1,0 +1,709 @@
+@prefix game: <http://GamerNetLibrary.com/> .
+
+game:10 a game:game ;
+    game:description "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic missions. Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success affects your role." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/10/header.jpg?t=1602535893" ;
+    game:name "Counter-Strike" ;
+    game:release_date "1 Nov, 2000" ;
+    game:website "None" .
+
+game:10180 a game:game ;
+    game:description "The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/10180/header.jpg?t=1573057968" ;
+    game:name "Call of Duty®: Modern Warfare® 2" ;
+    game:release_date "11 Nov, 2009" ;
+    game:website "https://www.callofduty.com/" .
+
+game:1046930 a game:game ;
+    game:description "Hire a crew and destroy your rivals in this new strategy battler set in the world of Dota. Introducing Season One: Explore White Spire and earn rewards on the Battle Pass. Pick from several different game modes, play on your own or with friends, and take advantage of crossplay on PC and mobile." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/1046930/header.jpg?t=1591066870" ;
+    game:name "Dota Underlords" ;
+    game:release_date "20 Jun, 2019" ;
+    game:website "http://underlords.com/" .
+
+game:105600 a game:game ;
+    game:description "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg?t=1590092560" ;
+    game:name "Terraria" ;
+    game:release_date "16 May, 2011" ;
+    game:website "http://www.terraria.org/" .
+
+game:107410 a game:game ;
+    game:description "Experience true combat gameplay in a massive military sandbox. Deploying a wide variety of single- and multiplayer content, over 20 vehicles and 40 weapons, and limitless opportunities for content creation, this is the PC’s premier military game. Authentic, diverse, open - Arma 3 sends you to war." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/107410/header_alt_assets_13.jpg?t=1608211055" ;
+    game:name "Arma 3" ;
+    game:release_date "12 Sep, 2013" ;
+    game:website "http://www.arma3.com" .
+
+game:1085660 a game:game ;
+    game:description "Destiny 2 is an action MMO with a single evolving world that you and your friends can join anytime, anywhere, absolutely free." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/1085660/header.jpg?t=1607380522" ;
+    game:name "Destiny 2" ;
+    game:release_date "1 Oct, 2019" ;
+    game:website "https://www.bungie.net/" .
+
+game:1089350 a game:game ;
+    game:description "2K continues to redefine what’s possible in sports gaming with NBA 2K20, featuring best in class graphics &amp; gameplay, ground breaking game modes, and unparalleled player control and customization." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/1089350/header.jpg?t=1595623296" ;
+    game:name "NBA 2K20" ;
+    game:release_date "5 Sep, 2019" ;
+    game:website "https://nba.2k.com/2k20/" .
+
+game:1091500 a game:game ;
+    game:description "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/1091500/header.jpg?t=1608552868" ;
+    game:name "Cyberpunk 2077" ;
+    game:release_date "9 Dec, 2020" ;
+    game:website "https://www.cyberpunk.net" .
+
+game:109600 a game:game ;
+    game:description "Neverwinter is a free, action MMORPG based on the acclaimed Dungeons &amp; Dragons fantasy roleplaying game. Epic stories, action combat and classic roleplaying await those heroes courageous enough to enter the fantastic world of Neverwinter!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/109600/header.jpg?t=1597095741" ;
+    game:name "Neverwinter" ;
+    game:release_date "5 Dec, 2013" ;
+    game:website "http://www.arcgames.com/en/games/neverwinter/news" .
+
+game:1097150 a game:game ;
+    game:description "Fall Guys is a massively multiplayer party game with up to 60 players online in a free-for-all struggle through round after round of escalating chaos until one victor remains!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/1097150/header_alt_assets_2.jpg?t=1608598304" ;
+    game:name "Fall Guys: Ultimate Knockout" ;
+    game:release_date "3 Aug, 2020" ;
+    game:website "http://fallguys.com" .
+
+game:1172470 a game:game ;
+    game:description "Apex Legends is the award-winning, free-to-play Battle Royale team shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities and experience strategic squad play and innovative gameplay in the next evolution of Battle Royale." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/1172470/header.jpg?t=1608238921" ;
+    game:name "Apex Legends™" ;
+    game:release_date "4 Nov, 2020" ;
+    game:website "https://www.ea.com/games/apex-legends" .
+
+game:130 a game:game ;
+    game:description "Made by Gearbox Software and originally released in 2001 as an add-on to Half-Life, Blue Shift is a return to the Black Mesa Research Facility in which you play as Barney Calhoun, the security guard sidekick who helped Gordon out of so many sticky situations." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/130/header.jpg?t=1579629868" ;
+    game:name "Half-Life: Blue Shift" ;
+    game:release_date "1 Jun, 2001" ;
+    game:website "None" .
+
+game:203160 a game:game ;
+    game:description "Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/203160/header.jpg?t=1601485883" ;
+    game:name "Tomb Raider" ;
+    game:release_date "4 Mar, 2013" ;
+    game:website "http://www.tombraider.com" .
+
+game:218230 a game:game ;
+    game:description "PlanetSide 2 is an all-out planetary war, where thousands of players battle as one across enormous continents. Utilize infantry, ground and air vehicles, and teamwork to destroy your enemies in this revolutionary first-person shooter on a massive scale." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/218230/header.jpg?t=1602861166" ;
+    game:name "PlanetSide 2" ;
+    game:release_date "20 Nov, 2012" ;
+    game:website "http://www.planetside2.com/" .
+
+game:218620 a game:game ;
+    game:description "PAYDAY 2 is an action-packed, four-player co-op shooter that once again lets gamers don the masks of the original PAYDAY crew - Dallas, Hoxton, Wolf and Chains - as they descend on Washington DC for an epic crime spree." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/218620/header_alt_assets_9.jpg?t=1608555607" ;
+    game:name "PAYDAY 2" ;
+    game:release_date "13 Aug, 2013" ;
+    game:website "http://www.overkillsoftware.com/" .
+
+game:219640 a game:game ;
+    game:description "Besiege castles and raid villages in Chivalry: Medieval Warfare, a fast-paced medieval first person slasher with a focus on multiplayer battles" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/219640/header.jpg?t=1589576854" ;
+    game:name "Chivalry: Medieval Warfare" ;
+    game:release_date "16 Oct, 2012" ;
+    game:website "http://www.tornbanner.com/chivalry" .
+
+game:219740 a game:game ;
+    game:description "Don’t Starve is an uncompromising wilderness survival game full of science and magic. Enter a strange and unexplored world full of strange creatures, dangers, and surprises. Gather resources to craft items and structures that match your survival style." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/219740/header.jpg?t=1602117150" ;
+    game:name "Don't Starve" ;
+    game:release_date "" ;
+    game:website "http://www.dontstarvegame.com" .
+
+game:219990 a game:game ;
+    game:description "Enter an apocalyptic fantasy world where humanity is on the brink of extinction, iron is valued above gold and trust is hard earned. This ARPG features complex character development, hundreds of unique items, crafting and quests with choice &amp; consequence." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/219990/header.jpg?t=1604937300" ;
+    game:name "Grim Dawn" ;
+    game:release_date "25 Feb, 2016" ;
+    game:website "http://www.grimdawn.com/" .
+
+game:220 a game:game ;
+    game:description "1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling. Valve's debut title wins more than 50 game-of-the-year awards on its way to being named \"Best PC Game Ever\" by PC Gamer, and launches a franchise with more than eight million retail units sold worldwide." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/220/header.jpg?t=1591063154" ;
+    game:name "Half-Life 2" ;
+    game:release_date "16 Nov, 2004" ;
+    game:website "http://www.half-life2.com" .
+
+game:221380 a game:game ;
+    game:description "Age of Empires II has been re-imagined in high definition with new features, trading cards, improved AI, workshop support, multiplayer, Steamworks integration and more!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/221380/header.jpg?t=1567618315" ;
+    game:name "Age of Empires II (2013)" ;
+    game:release_date "9 Apr, 2013" ;
+    game:website "http://www.AgeofEmpires.com" .
+
+game:224260 a game:game ;
+    game:description "The chances of you surviving this all out war of society and the undead are slim to none. Already, there are millions of the walking dead shambling about, searching for food to eat. There's no known cure. One bite can possibly end it all for you. However, you aren't alone in this nightmare." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/224260/header.jpg?t=1598016602" ;
+    game:name "No More Room in Hell" ;
+    game:release_date "31 Oct, 2013" ;
+    game:website "https://www.nomoreroominhell.com/" .
+
+game:227300 a game:game ;
+    game:description "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/227300/header_alt_assets_4.jpg?t=1608220310" ;
+    game:name "Euro Truck Simulator 2" ;
+    game:release_date "12 Oct, 2012" ;
+    game:website "https://eurotrucksimulator2.com/" .
+
+game:227940 a game:game ;
+    game:description "Shoot, blow sh!t up, fly or bark orders in the ultimate Free-to-Play, large scale, multiplayer, shooter experience. Thousands of players in multiple battles fighting one massive war of nations. The first to capture 15 cities takes the glory." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/227940/header_alt_assets_9.jpg?t=1608812333" ;
+    game:name "Heroes & Generals" ;
+    game:release_date "18 Oct, 2016" ;
+    game:website "https://www.heroesandgenerals.com/" .
+
+game:230410 a game:game ;
+    game:description "Warframe is a cooperative free-to-play third person online action game set in an evolving sci-fi world." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/230410/header.jpg?t=1608327513" ;
+    game:name "Warframe" ;
+    game:release_date "25 Mar, 2013" ;
+    game:website "http://www.warframe.com" .
+
+game:236390 a game:game ;
+    game:description "War Thunder is the most comprehensive free-to-play, cross-platform, MMO military game dedicated to aviation, armoured vehicles, and naval craft from World War II and the Cold War. Join now and take part in major battles on land, in the air, and at sea, fighting with millions of players from all over the world in an ever-evolving..." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/236390/header.jpg?t=1608895326" ;
+    game:name "War Thunder" ;
+    game:release_date "15 Aug, 2013" ;
+    game:website "http://warthunder.com/" .
+
+game:238960 a game:game ;
+    game:description "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/238960/header.jpg?t=1605065705" ;
+    game:name "Path of Exile" ;
+    game:release_date "23 Oct, 2013" ;
+    game:website "http://www.pathofexile.com" .
+
+game:239140 a game:game ;
+    game:description "First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic. Scavenge for supplies, craft weapons, and face hordes of the infected." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/239140/header_alt_assets_28.jpg?t=1608647864" ;
+    game:name "Dying Light" ;
+    game:release_date "26 Jan, 2015" ;
+    game:website "https://dyinglightgame.com/?utm_source=Steam&amp;utm_medium=Link&amp;utm_campaign=Dying_Light" .
+
+game:242760 a game:game ;
+    game:description "As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first person survival horror simulator." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/242760/header.jpg?t=1590522045" ;
+    game:name "The Forest" ;
+    game:release_date "Apr 30, 2018" ;
+    game:website "http://survivetheforest.com/" .
+
+game:252490 a game:game ;
+    game:description "The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/252490/header_alt_assets_6.jpg?t=1608404151" ;
+    game:name "Rust" ;
+    game:release_date "8 Feb, 2018" ;
+    game:website "http://rust.facepunch.com/" .
+
+game:252950 a game:game ;
+    game:description "Football et voitures font bon ménage dans cette suite basée sur les lois de la physique du grand classique tant apprécié, Supersonic Acrobatic Rocket-Powered Battle-Cars !" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/252950/header.jpg?t=1607530214" ;
+    game:name "Rocket League®" ;
+    game:release_date "6 juil. 2015" ;
+    game:website "http://www.rocketleague.com/" .
+
+game:253710 a game:game ;
+    game:description "The most realistic hunting experience awaits. Explore 12 reserves and hunt 45 unique species, ranging from waterfowl to big game. Over 100 weapons from state-of-the art rifles to bows. Customize your load-out with stands, blinds and dogs. Play alone or in multiplayer with up to 7 friends." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/253710/header.jpg?t=1605868170" ;
+    game:name "theHunter Classic" ;
+    game:release_date "3 Jun, 2014" ;
+    game:website "http://www.thehunter.com/" .
+
+game:255710 a game:game ;
+    game:description "Cities: Skylines is a modern take on the classic city simulation. The game introduces new game play elements to realize the thrill and hardships of creating and maintaining a real city whilst expanding on some well-established tropes of the city building experience." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/255710/header.jpg?t=1606821413" ;
+    game:name "Cities: Skylines" ;
+    game:release_date "10 Mar, 2015" ;
+    game:website "None" .
+
+game:261550 a game:game ;
+    game:description "The horns sound, the ravens gather. An empire is torn by civil war. Beyond its borders, new kingdoms rise. Gird on your sword, don your armour, summon your followers and ride forth to win glory on the battlefields of Calradia. Establish your hegemony and create a new world out of the ashes of the old." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/261550/header.jpg?t=1608928062" ;
+    game:name "Mount & Blade II: Bannerlord" ;
+    game:release_date "30 Mar, 2020" ;
+    game:website "https://www.taleworlds.com/" .
+
+game:271590 a game:game ;
+    game:description "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/271590/header.jpg?t=1592866696" ;
+    game:name "Grand Theft Auto V" ;
+    game:release_date "13 Apr, 2015" ;
+    game:website "http://www.rockstargames.com/V/" .
+
+game:272060 a game:game ;
+    game:description "How long has it been? A man sits in a distant getaway cabin waiting for his wife Serena. Where is she? Things in the cabin evoke memories, and the husband comes to a disturbing realization... This short point-and-click adventure is the result of a massive collaborative effort between dozens of fans and designers of adventure games." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/272060/header.jpg?t=1447360032" ;
+    game:name "Serena" ;
+    game:release_date "30 Jan, 2014" ;
+    game:website "http://waitingforserena.com" .
+
+game:273110 a game:game ;
+    game:description "Counter-Strike Nexon: Studio is a Free to Play MMOFPS offering competitive PvP and PvE action including content from the original Counter-Strike and all new game modes, map creation function, weapons, and hordes of Zombies!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/273110/header_alt_assets_4.jpg?t=1608713475" ;
+    game:name "Counter-Strike Nexon: Studio" ;
+    game:release_date "7 Oct, 2014" ;
+    game:website "None" .
+
+game:278360 a game:game ;
+    game:description "A Story About My Uncle is a first person platforming adventure game about a boy who searches for his lost uncle, and ends up in a world he couldn’t imagine existed. The movement is a crucial part of the games core gameplay – focusing on swinging through the world with a grappling hook that gives the player a wonderful sense of speed and..." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/278360/header.jpg?t=1589403981" ;
+    game:name "A Story About My Uncle" ;
+    game:release_date "28 May, 2014" ;
+    game:website "http://gonenorthgames.com/games/a-story-about-my-uncle/" .
+
+game:285800 a game:game ;
+    game:description "Braveland is a turn-based game inspired by old-school strategies with hexagonal battlefield. You will start as a humble warrior's son whose village was cruelly raided and will end as talented commander of your army." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/285800/header.jpg?t=1572885919" ;
+    game:name "Braveland" ;
+    game:release_date "17 Mar, 2014" ;
+    game:website "http://www.tortugateam.com/" .
+
+game:291480 a game:game ;
+    game:description "Warface is a contemporary MMO first person shooter with millions of fans around the world. It offers intense PvP modes, compelling PvE missions and raids that you can challenge with five diverse classes and a colossal customizable arsenal." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/291480/header.jpg?t=1608713433" ;
+    game:name "Warface" ;
+    game:release_date "1 Jul, 2014" ;
+    game:website "https://warface.com/" .
+
+game:291550 a game:game ;
+    game:description "An epic platform fighter for up to 8 players online or locally. Try casual free-for-alls, ranked matches, or invite friends to a private room. And it's free! Play cross-platform with millions of players on PS4, Xbox One, Nintendo Switch, iOS, Android and Steam! Frequent updates. Over fifty Legends." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/291550/header.jpg?t=1608332244" ;
+    game:name "Brawlhalla" ;
+    game:release_date "17 Oct, 2017" ;
+    game:website "http://www.brawlhalla.com" .
+
+game:292030 a game:game ;
+    game:description "As war rages on throughout the Northern Realms, you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon that can alter the shape of the world." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/292030/header.jpg?t=1607418742" ;
+    game:name "The Witcher® 3: Wild Hunt" ;
+    game:release_date "18 May, 2015" ;
+    game:website "http://www.thewitcher.com" .
+
+game:30 a game:game ;
+    game:description "Enlist in an intense brand of Axis vs. Allied teamplay set in the WWII European Theatre of Operations. Players assume the role of light/assault/heavy infantry, sniper or machine-gunner class, each with a unique arsenal of historical weaponry at their disposal. Missions are based on key historical operations." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/30/header.jpg?t=1512413490" ;
+    game:name "Day of Defeat" ;
+    game:release_date "1 May, 2003" ;
+    game:website "http://www.dayofdefeat.com/" .
+
+game:300 a game:game ;
+    game:description "Valve's WWII Multiplayer Classic - Now available for Mac." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/300/header.jpg?t=1570137070" ;
+    game:name "Day of Defeat: Source" ;
+    game:release_date "12 Jul, 2010" ;
+    game:website "http://www.dayofdefeat.com/" .
+
+game:301520 a game:game ;
+    game:description "Build insane, fully customisable robot battle vehicles that drive, hover, walk and fly in the free-to-play action game Robocraft. Add weapons from the future and jump in the driving seat as you take your creation into battle against other players online!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/301520/header.jpg?t=1606218942" ;
+    game:name "Robocraft" ;
+    game:release_date "24 Aug, 2017" ;
+    game:website "http://robocraftgame.com" .
+
+game:304050 a game:game ;
+    game:description "Grab your friends, hone your blades, and set off for adventure in Trove, the ultimate action MMO!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/304050/header.jpg?t=1608110793" ;
+    game:name "Trove" ;
+    game:release_date "9 Jul, 2015" ;
+    game:website "http://www.trionworlds.com/trove/?affiliateId=steam" .
+
+game:304930 a game:game ;
+    game:description "You're a survivor in the zombie infested ruins of society, and must work with your friends and forge alliances to remain among the living." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/304930/header.jpg?t=1590451726" ;
+    game:name "Unturned" ;
+    game:release_date "7 Jul, 2017" ;
+    game:website "http://smartlydressedgames.com/" .
+
+game:319630 a game:game ;
+    game:description "Episode 1 now FREE! Life is Strange is an award-winning and critically acclaimed episodic adventure game that allows the player to rewind time and affect the past, present and future." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/319630/header.jpg?t=1592488448" ;
+    game:name "Life is Strange - Episode 1" ;
+    game:release_date "29 Jan, 2015" ;
+    game:website "http://www.lifeisstrange.com" .
+
+game:320 a game:game ;
+    game:description "Fast multiplayer action set in the Half-Life 2 universe! HL2's physics adds a new dimension to deathmatch play. Play straight deathmatch or try Combine vs. Resistance teamplay. Toss a toilet at your friend today!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/320/header.jpg?t=1602536087" ;
+    game:name "Half-Life 2: Deathmatch" ;
+    game:release_date "1 Nov, 2004" ;
+    game:website "None" .
+
+game:322330 a game:game ;
+    game:description "Don't Starve Together is the standalone multiplayer expansion of the uncompromising survival game Don't Starve." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/322330/header_alt_assets_0.jpg?t=1608060905" ;
+    game:name "Don't Starve Together" ;
+    game:release_date "21 Apr, 2016" ;
+    game:website "http://www.dontstarvegame.com" .
+
+game:333930 a game:game ;
+    game:description "Work together or die alone! Fight to restore peace to London or tear it down for profit in the most challenging team based shooter around." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/333930/header.jpg?t=1591272761" ;
+    game:name "Dirty Bomb®" ;
+    game:release_date "Jun 2015" ;
+    game:website "http://www.dirtybomb.com/" .
+
+game:340 a game:game ;
+    game:description "Originally planned as a section of the Highway 17 chapter of Half-Life 2, Lost Coast is a playable technology showcase that introduces High Dynamic Range lighting to the Source engine." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/340/header.jpg?t=1571757270" ;
+    game:name "Half-Life 2: Lost Coast" ;
+    game:release_date "27 Oct, 2005" ;
+    game:website "http://www.half-life2.com" .
+
+game:346110 a game:game ;
+    game:description "Будучи выброшенным голым на берег таинственного острова, голодая и замерзая, вам придется заниматься ремеслом, охотой и строительством, чтобы выжить. Используйте опыт и ловкость, чтобы приручать, разводить и ездить на первобытных существах, живущих в ARK." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/346110/header_alt_assets_8.jpg?t=1608086122" ;
+    game:name "ARK: Survival Evolved" ;
+    game:release_date "27 авг. 2017" ;
+    game:website "http://www.playark.com" .
+
+game:359550 a game:game ;
+    game:description "Tom Clancy's Rainbow Six Siege is the latest installment of the acclaimed first-person shooter franchise developed by the renowned Ubisoft Montreal studio." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/359550/header.jpg?t=1606776740" ;
+    game:name "Tom Clancy's Rainbow Six® Siege" ;
+    game:release_date "Dec 1, 2015" ;
+    game:website "http://rainbow6.ubi.com/" .
+
+game:360 a game:game ;
+    game:description "Half-Life Deathmatch: Source is a recreation of the first multiplayer game set in the Half-Life universe. Features all the classic weapons and most-played maps, now running on the Source engine." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/360/header.jpg?t=1567240329" ;
+    game:name "Half-Life Deathmatch: Source" ;
+    game:release_date "1 May, 2006" ;
+    game:website "None" .
+
+game:363970 a game:game ;
+    game:description "Ever wondered what one quadrillion damage per second feels like? Wonder no more! Embark on your quest to attain it today! Start out by clicking on the monster to kill them, and get their gold. Spend that gold on hiring new heroes and get more damage. The more damage you deal, the more gold you will get." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/363970/header.jpg?t=1512177483" ;
+    game:name "Clicker Heroes" ;
+    game:release_date "13 May, 2015" ;
+    game:website "http://clickerheroes.com" .
+
+game:370910 a game:game ;
+    game:description "Set in the 90's, Kathy Rain tells the story of a strong-willed journalism major who has to come to terms with her own troubled past as she investigates the mysterious death of her recently deceased grandfather." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/370910/header.jpg?t=1599807548" ;
+    game:name "Kathy Rain" ;
+    game:release_date "5 May, 2016" ;
+    game:website "http://kathyraingame.com" .
+
+game:377160 a game:game ;
+    game:description "Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/377160/header.jpg?t=1588615523" ;
+    game:name "Fallout 4" ;
+    game:release_date "9 Nov, 2015" ;
+    game:website "http://www.fallout4.com" .
+
+game:381210 a game:game ;
+    game:description "Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught and killed." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/381210/header.jpg?t=1606845070" ;
+    game:name "Dead by Daylight" ;
+    game:release_date "14 Jun, 2016" ;
+    game:website "http://www.deadbydaylight.com" .
+
+game:386360 a game:game ;
+    game:description "Join 35+ million players in SMITE, the Battleground of the Gods! Wield Thor’s hammer, turn your foes to stone as Medusa, or flex your divine power as one of 100+ other mythological icons. Become a God and play FREE today!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/386360/header.jpg?t=1608058515" ;
+    game:name "SMITE®" ;
+    game:release_date "8 Sep, 2015" ;
+    game:website "https://www.smitegame.com" .
+
+game:387990 a game:game ;
+    game:description "Enter the creative paradise of Scrap Mechanic! Build fantastic machines, go on adventures with your friends and defend against waves of evil Farmbots in this imaginative multiplayer survival sandbox. With Scrap Mechanic’s powerful creation tools you can engineer your own adventures!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/387990/header.jpg?t=1593703247" ;
+    game:name "Scrap Mechanic" ;
+    game:release_date "19 Jan, 2016" ;
+    game:website "http://www.scrapmechanic.com" .
+
+game:400 a game:game ;
+    game:description "Portal&trade; is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/400/header.jpg?t=1608593358" ;
+    game:name "Portal" ;
+    game:release_date "10 Oct, 2007" ;
+    game:website "http://www.whatistheorangebox.com/" .
+
+game:4000 a game:game ;
+    game:description "Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We give you the tools and leave you to play." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/4000/header.jpg?t=1601306982" ;
+    game:name "Garry's Mod" ;
+    game:release_date "29 Nov, 2006" ;
+    game:website "http://gmod.facepunch.com" .
+
+game:413150 a game:game ;
+    game:description "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg?t=1608624324" ;
+    game:name "Stardew Valley" ;
+    game:release_date "26 Feb, 2016" ;
+    game:website "http://www.stardewvalley.net" .
+
+game:417910 a game:game ;
+    game:description "First, realistic PvP brawling game for up to 8 vs 8 players with original, dynamic combat system and fast, round based battles. Create and develop Your character. Earn new skills and items that helps You beat Your opponents. Gather Your friends and fight together in a clan." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/417910/header.jpg?t=1600256776" ;
+    game:name "Street Warriors Online" ;
+    game:release_date "16 Dec, 2016" ;
+    game:website "http://streetwarriorsonline.com/" .
+
+game:431960 a game:game ;
+    game:description "Use stunning live wallpapers on your desktop. Animate your own images to create new wallpapers or import videos/websites and share them on the Steam Workshop!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/431960/header.jpg?t=1604592117" ;
+    game:name "Wallpaper Engine" ;
+    game:release_date "16 Nov, 2018" ;
+    game:website "https://www.wallpaperengine.io" .
+
+game:433850 a game:game ;
+    game:description "Z1 Battle Royale is a Free to Play, fast-paced, action arcade, competitive Battle Royale. Staying true to its &quot;King of the Kill&quot; roots, the game has been revamped and restored to the classic feel, look, and gameplay everyone fell in love with. Play solo, duos, or fives and be the last ones standing." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/433850/header.jpg?t=1579626820" ;
+    game:name "Z1 Battle Royale" ;
+    game:release_date "28 Feb, 2018" ;
+    game:website "https://www.h1z1.com" .
+
+game:438100 a game:game ;
+    game:description "Join our growing community as you explore, play, and help craft the future of social VR. Create worlds and custom avatars. Welcome to VRChat." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/438100/header.jpg?t=1597188061" ;
+    game:name "VRChat" ;
+    game:release_date "1 Feb, 2017" ;
+    game:website "http://www.vrchat.com" .
+
+game:440 a game:game ;
+    game:description "Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/440/header.jpg?t=1592263852" ;
+    game:name "Team Fortress 2" ;
+    game:release_date "10 Oct, 2007" ;
+    game:website "http://www.teamfortress.com/" .
+
+game:44350 a game:game ;
+    game:description "Be fast, be first and be famous as the race returns in GRID 2, the sequel to the BAFTA-award winning, multi-million selling Race Driver: GRID." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/44350/header.jpg?t=1571948291" ;
+    game:name "GRID 2" ;
+    game:release_date "" ;
+    game:website "http://www.gridgame.com/" .
+
+game:444090 a game:game ;
+    game:description "Join 25+ million players in Paladins, the free-to-play fantasy team-based shooter sensation. Wield guns and magic as a legendary Champion of the Realm, customizing your core set of abilities to play exactly how you want to play." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/444090/header.jpg?t=1603908027" ;
+    game:name "Paladins®" ;
+    game:release_date "8 May, 2018" ;
+    game:website "http://www.paladins.com/" .
+
+game:444200 a game:game ;
+    game:description "A winter fairy tale and holiday madness have blended together. A reindeer tank, air battles on a snow-covered map, and a whole train of gifts await!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/444200/header.jpg?t=1607584746" ;
+    game:name "World of Tanks Blitz" ;
+    game:release_date "9 Nov, 2016" ;
+    game:website "http://wotblitz.com/" .
+
+game:477160 a game:game ;
+    game:description "Human: Fall Flat is a hilarious, light-hearted platformer set in floating dreamscapes that can be played solo or with up to 8 players online. Free new levels keep its vibrant community rewarded." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/477160/header_alt_assets_13.jpg?t=1608677870" ;
+    game:name "Human: Fall Flat" ;
+    game:release_date "22 Jul, 2016" ;
+    game:website "http://www.nobrakesgames.com/human/" .
+
+game:49520 a game:game ;
+    game:description "The Ultimate Vault Hunter’s Upgrade lets you get the most out of the Borderlands 2 experience." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/49520/header.jpg?t=1590450074" ;
+    game:name "Borderlands 2" ;
+    game:release_date "20 Sep, 2012" ;
+    game:website "https://www.2k.com/en-US/game/borderlands-2/" .
+
+game:50 a game:game ;
+    game:description "Return to the Black Mesa Research Facility as one of the military specialists assigned to eliminate Gordon Freeman. Experience an entirely new episode of single player action. Meet fierce alien opponents, and experiment with new weaponry. Named 'Game of the Year' by the Academy of Interactive Arts and Sciences." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/50/header.jpg?t=1579628243" ;
+    game:name "Half-Life: Opposing Force" ;
+    game:release_date "1 Nov, 1999" ;
+    game:website "None" .
+
+game:500 a game:game ;
+    game:description "From Valve (the creators of Counter-Strike, Half-Life and more) comes Left 4 Dead, a co-op action horror game for the PC and Xbox 360 that casts up to four players in an epic struggle for survival against swarming zombie hordes and terrifying mutant monsters." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/500/header.jpg?t=1587582567" ;
+    game:name "Left 4 Dead" ;
+    game:release_date "17 Nov, 2008" ;
+    game:website "http://www.l4d.com/" .
+
+game:532210 a game:game ;
+    game:description "After a tragic incident, brothers Sean and Daniel Diaz run away from home. Fearing the police, and dealing with Daniel's new telekinetic power, the boys head to Mexico. Each stop on their journey brings new friends and new challenges." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/532210/header.jpg?t=1600359009" ;
+    game:name "Life is Strange 2" ;
+    game:release_date "26 Sep, 2018" ;
+    game:website "https://www.lifeisstrange.com" .
+
+game:550 a game:game ;
+    game:description "Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/550/header.jpg?t=1601578341" ;
+    game:name "Left 4 Dead 2" ;
+    game:release_date "16 Nov, 2009" ;
+    game:website "http://www.l4d.com" .
+
+game:550650 a game:game ;
+    game:description "Black Squad is a free-to-play military first-person-shooter. Players can master their skills and show off their strategies with a wide range of game maps, modes, and weapons to choose from. Join thousands of FPS players worldwide in one of the most played games on Steam!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/550650/header.jpg?t=1606887592" ;
+    game:name "Black Squad" ;
+    game:release_date "26 Jun, 2019" ;
+    game:website "http://www.blacksquad.com/" .
+
+game:552990 a game:game ;
+    game:description "Experience epic, free-to-play naval combat when you helm one of over 300 historic vessels in the exciting balance of strategy and real-time combat that World of Warships offers. Outfit your fleet with flags, camouflages, modifications, talented Commanders, and more!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/552990/header.jpg?t=1608741995" ;
+    game:name "World of Warships" ;
+    game:release_date "15 Nov, 2017" ;
+    game:website "https://steam.worldofwarships.com/" .
+
+game:570 a game:game ;
+    game:description "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1608587587" ;
+    game:name "Dota 2" ;
+    game:release_date "9 Jul, 2013" ;
+    game:website "http://www.dota2.com/" .
+
+game:578080 a game:game ;
+    game:description "PLAYERUNKNOWN'S BATTLEGROUNDS is a battle royale shooter that pits 100 players against each other in a struggle for survival. Gather supplies and outwit your opponents to become the last person standing." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg?t=1608093288" ;
+    game:name "PLAYERUNKNOWN'S BATTLEGROUNDS" ;
+    game:release_date "21 Dec, 2017" ;
+    game:website "http://www.pubg.com" .
+
+game:582010 a game:game ;
+    game:description "Welcome to a new world! In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and excitement." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/582010/header.jpg?t=1602806745" ;
+    game:name "Monster Hunter: World" ;
+    game:release_date "9 Aug, 2018" ;
+    game:website "http://www.monsterhunterworld.com/" .
+
+game:582660 a game:game ;
+    game:description "Black Desert Online is a sandbox, living-world MMORPG. Experience fast-paced, action-packed combat, hunt monsters and huge bosses, fight with friends in a guild to siege nodes and conquer castles, train your life skills such as fishing, trading, crafting, cooking, and much more!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/582660/header.jpg?t=1608632665" ;
+    game:name "Black Desert Online" ;
+    game:release_date "24 May, 2017" ;
+    game:website "https://www.blackdesertonline.com/" .
+
+game:588430 a game:game ;
+    game:description "Fallout Shelter puts you in control of a state-of-the-art underground Vault from Vault-Tec. Build the perfect Vault, keep your Dwellers happy, and protect them from the dangers of the Wasteland." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/588430/header.jpg?t=1606161609" ;
+    game:name "Fallout Shelter" ;
+    game:release_date "29 Mar, 2017" ;
+    game:website "http://www.falloutshelter.com/" .
+
+game:60 a game:game ;
+    game:description "A futuristic action game that challenges your agility as well as your aim, Ricochet features one-on-one and team matches played in a variety of futuristic battle arenas." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/60/header.jpg?t=1599518374" ;
+    game:name "Ricochet" ;
+    game:release_date "1 Nov, 2000" ;
+    game:website "None" .
+
+game:601150 a game:game ;
+    game:description "The ultimate Devil Hunter is back in style, in the game action fans have been waiting for." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/601150/header.jpg?t=1608599498" ;
+    game:name "Devil May Cry 5" ;
+    game:release_date "7 Mar, 2019" ;
+    game:website "http://www.capcom.co.jp/devil5/" .
+
+game:620 a game:game ;
+    game:description "The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/620/header.jpg?t=1587582232" ;
+    game:name "Portal 2" ;
+    game:release_date "18 Apr, 2011" ;
+    game:website "http://www.thinkwithportals.com/" .
+
+game:632360 a game:game ;
+    game:description "Escape a chaotic alien planet by fighting through hordes of frenzied monsters – with your friends, or on your own. Combine loot in surprising ways and master each character until you become the havoc you feared upon your first crash landing." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/632360/header.jpg?t=1597330177" ;
+    game:name "Risk of Rain 2" ;
+    game:release_date "11 Aug, 2020" ;
+    game:website "https://www.riskofrain.com/" .
+
+game:648800 a game:game ;
+    game:description "Raft throws you and your friends into an epic oceanic adventure! Alone or together, players battle to survive a perilous voyage across a vast sea! Gather debris, scavenge reefs and build your own floating home, but be wary of the man-eating sharks!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/648800/header.jpg?t=1602795811" ;
+    game:name "Raft" ;
+    game:release_date "May 23, 2018" ;
+    game:website "http://www.raft-game.com" .
+
+game:70 a game:game ;
+    game:description "Named Game of the Year by over 50 publications, Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive. Also includes an exciting multiplayer mode that allows you to play against friends and enemies around the world." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/70/header.jpg?t=1591048039" ;
+    game:name "Half-Life" ;
+    game:release_date "8 Nov, 1998" ;
+    game:website "http://www.half-life.com/" .
+
+game:700330 a game:game ;
+    game:description "Deep within the SCP Foundation during a containment breach, many of the anomalies have bypassed security and escaped from their chambers - without peaceful intentions. Become site personnel, a re-containment agent, or an anomalous entity and fight to take control of or escape the facility!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/700330/header.jpg?t=1608376504" ;
+    game:name "SCP: Secret Laboratory" ;
+    game:release_date "29 Dec, 2017" ;
+    game:website "https://scpslgame.com/" .
+
+game:72850 a game:game ;
+    game:description "EPIC FANTASY REBORN The next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/72850/header.jpg?t=1590590362" ;
+    game:name "The Elder Scrolls V: Skyrim" ;
+    game:release_date "10 Nov, 2011" ;
+    game:website "http://elderscrolls.com/" .
+
+game:730 a game:game ;
+    game:description "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.)." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1607046958" ;
+    game:name "Counter-Strike: Global Offensive" ;
+    game:release_date "21 Aug, 2012" ;
+    game:website "http://blog.counter-strike.net/" .
+
+game:739630 a game:game ;
+    game:description "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost hunting equipment at your disposal in order to gather as much evidence as you can." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/739630/header.jpg?t=1608651139" ;
+    game:name "Phasmophobia" ;
+    game:release_date "18 sept. 2020" ;
+    game:website "http://kineticgames.co.uk/" .
+
+game:755790 a game:game ;
+    game:description "Escape an astonishing disaster in Ring of Elysium, a battle royale shooter developed by Aurora Studio." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/755790/header.jpg?t=1604493157" ;
+    game:name "Ring of Elysium" ;
+    game:release_date "24 Jun, 2019" ;
+    game:website "None" .
+
+game:80 a game:game ;
+    game:description "With its extensive Tour of Duty campaign, a near-limitless number of skirmish modes, updates and new content for Counter-Strike's award-winning multiplayer game play, plus over 12 bonus single player missions, Counter-Strike: Condition Zero is a tremendous offering of single and multiplayer content." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/80/header.jpg?t=1602535977" ;
+    game:name "Counter-Strike: Condition Zero" ;
+    game:release_date "1 Mar, 2004" ;
+    game:website "None" .
+
+game:814380 a game:game ;
+    game:description "Game of the Year - The Game Awards 2019 Best Action Game of 2019 - IGN Carve your own clever path to vengeance in the award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/814380/header.jpg?t=1603904569" ;
+    game:name "Sekiro™: Shadows Die Twice - GOTY Edition" ;
+    game:release_date "21 Mar, 2019" ;
+    game:website "http://www.sekirothegame.com/" .
+
+game:863550 a game:game ;
+    game:description "Travel the globe and track your targets across exotic sandbox locations in HITMAN™ 2. From sun-drenched streets to dark and dangerous rainforests, nowhere is safe from the world’s most creative assassin, Agent 47 in the ultimate spy thriller story." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/863550/header.jpg?t=1598895956" ;
+    game:name "HITMAN™ 2" ;
+    game:release_date "13 Nov, 2018" ;
+    game:website "http://www.hitman.com/" .
+
+game:8930 a game:game ;
+    game:description "Create, discover, and download new player-created maps, scenarios, interfaces, and more!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/8930/header.jpg?t=1579731804" ;
+    game:name "Sid Meier's Civilization® V" ;
+    game:release_date "23 Sep, 2010" ;
+    game:website "http://www.civilization.com" .
+
+game:945360 a game:game ;
+    game:description "An online and local party game of teamwork and betrayal for 4-10 players...in space!" ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/945360/header.jpg?t=1607727748" ;
+    game:name "Among Us" ;
+    game:release_date "16 ноя. 2018" ;
+    game:website "http://innersloth.com/gameAmongUs.php" .
+
+game:96000 a game:game ;
+    game:description "Life on Tiny Planet was calm and carefree until a great disaster occurred - Tiny Planet was hit by a meteor! The world fell apart and now its future depends only on you! Use your imagination and creativity: in order to restore Tiny Planet and help its inhabitants you will have to fix a variety of machines and mechanisms as well as solve..." ;
+    game:image "https://steamcdn-a.akamaihd.net/steam/apps/96000/header.jpg?t=1569408406" ;
+    game:name "The Tiny Bang Story" ;
+    game:release_date "22 Apr, 2011" ;
+    game:website "http://www.colibrigames.com" .
+
