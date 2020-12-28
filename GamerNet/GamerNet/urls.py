@@ -21,7 +21,7 @@ from app import views
 urlpatterns = [
     #path('test/', views.test, name='test'), substitui o test por table.html p ser mais intuitivo
     path('index/', views.index, name = 'index'),
-    path('news/', views.news, name = 'news'),
+    path('news/', views.store, name = 'store'),
     path('tables/', views.table, name = 'table'),
     path('admin/', views.admin, name = 'admin'),
     path('admin/<int:countryID>', views.admin_update, name = 'countryAdmin'),
