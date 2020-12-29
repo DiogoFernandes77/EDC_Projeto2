@@ -107,10 +107,10 @@
                     <form method="post" action="{% url 'admin' %}">
                         {% csrf_token %}
                         <select class="mdb-select md-form form-control bg-light border-0 small" id="sel"
-                                name="countrySelect" onchange="submit()" searchable="Search here..">
+                                name="accountSelect" onchange="submit()" searchable="Search here..">
                             <option value="" disabled selected>{{ default_message }}</option>
-                            {% for id,name in countries.items %}
-                                <option value={{ id }}>{{ name }}</option>
+                            {% for id in accounts %}
+                                <option> {{ id }}</option>
                             {% endfor %}
                         </select>
                         <input id="submitIn" type="hidden" name="myinput" value="0"/>
@@ -161,49 +161,46 @@
             <!-- Begin Page Content -->
 
             <div class="container-fluid">
-                <form method="post" action="{% url 'countryAdmin' request.countryID as the_url %}">
-                    {% csrf_token %}
-                    <div class="row">
-                        <div class="col-sm" align="left">
-                            <h1 class="h3 mb-2 text-gray-800">Admin Section</h1>
-                        </div>
-                        <div class="col-sm"></div>
-                        <div class="col-sm" align="right">
-                            <input align="center" name="selData" id="date" type="date"/>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-sm">
-                            {% block content %}
-                                {% if error == 'no date' %}
-                                    <p>Error: please select a date</p>
-                                {% endif %}
+                    <div class="row" style = "padding:10px;">
 
-                                {% if error == 'not a number' %}
-                                    <p>Error: please insert a valid number</p>
-                                {% endif %}
-                                {% if error == 'no country selected' %}
-                                    <p>Error: first choose country that you want to update</p>
-                                {% endif %}
+                        <div class="col-sm-3 col-md-3 col-xs-8 image-container">
+                            <div class="account_name">
+                                <p> {{ name }}</p>
+                            </div>
 
-                            {% endblock %}
-                            <input name="newCases" placeholder="New number of cases"/>
-                            <button type="submit">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
+                        </div>
+
+                        <div class="col-sm-3 col-md-3 col-xs-8 image-container">
+                            <div class="account_nick">
+                                <p> {{ nick }}</p>
+                            </div>
+
+                        </div>
+                        {% for game in games %}
+                    <div class="row" style = "padding:10px;">
+
+                        <div class="col-sm-3 col-md-3 col-xs-8 image-container">
+                            <img style="width: 100%" src={{ image }}>
+
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xs-16">
+                            <div class="job_descp">
+                                <p>{{ game }}</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class = "row mt-3">
-                        <div class="col-sm">
+                {% endfor %}
 
-                            <input name="newDeaths" placeholder="New number of deaths"/>
-                            <button type="submit">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
+
+
+
+
+
+
                     </div>
-                </form>
+
+
             </div>
 
 
