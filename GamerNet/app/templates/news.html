@@ -177,7 +177,7 @@
                 <p class="mb-4">All games in a distance of a click</p>
 
 
-                {% for image, gameName, description, id in game_properties %}
+                {% for image, gameName, description, id, price in game_properties %}
                     <div class="row" style = "padding:10px;">
 
                         <div class="col-sm-3 col-md-3 col-xs-8 image-container">
@@ -185,8 +185,10 @@
 
                         </div>
                         <div class="col-sm-6 col-md-6 col-xs-16">
+                            <p style =  "font-size: 20px; color: black;">{{ gameName }}<p>
                             <div class="job_descp">
                                 <p>{{ description }}</p>
+                            <p>Price: {{price }}  <button class="btn btn-default"><i class="fas fa-shopping-cart"> </i></button></p>
                             </div>
                         </div>
                     </div>

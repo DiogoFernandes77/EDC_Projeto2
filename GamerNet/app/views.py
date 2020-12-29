@@ -95,7 +95,7 @@ globl_gen = "Select game gender"
 
 def store(request):
     global globl_gen
-    sel_gen = "Select game gender"
+
     place_message = "Search a game"
     warn_message = ""
     genres_list = get_genres()
@@ -121,11 +121,12 @@ def store(request):
 
 
     if len(game_list) == 0:
+        globl_gen = "Select game gender"
         warn_message = "Didn't find any results"
 
 
     tparams = {
-        'default_message': sel_gen,
+        'default_message': globl_gen,
         'warn_message': warn_message,
         'genres': genres_list,
         'place_message': place_message,
