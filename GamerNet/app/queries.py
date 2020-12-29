@@ -141,10 +141,11 @@ def get_person_info(pessoa):
 
 def get_no_friends(acc):
     query = """
-            select ?name ?nick ?account
+            select ?name ?nick ?account ?logo
             where { 
                 ?account foaf:name ?name.
                 ?account foaf:nick ?nick.
+                ?account foaf:logo ?logo.
                 FILTER (
                     !EXISTS {
                         ?account foaf:knows game:""" + acc + """.
@@ -153,21 +154,21 @@ def get_no_friends(acc):
             } 
         """
     result = queryDB(query)
-    return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"]) for x in result]
+    return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"], x["logo"]["value"]) for x in result]
 
 
 def get_friends(acc):
     query = """
-                select ?name ?nick ?account
+                select ?name ?nick ?account ?logo
                 where { 
                     ?account foaf:name ?name.
                     ?account foaf:nick ?nick.
                     ?account foaf:knows game:""" + acc + """.
-
+                    ?account foaf:logo ?logo.
                 } 
             """
     result = queryDB(query)
-    return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"]) for x in result]
+    return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"], x["logo"]["value"]) for x in result]
 
 def queryDB(query):
     query = """
@@ -211,3 +212,4 @@ def test():
 # print(get_games())
 # print(get_game_info("10"))
 # insert_price()
+#print(get_no_friends("Account1"))
