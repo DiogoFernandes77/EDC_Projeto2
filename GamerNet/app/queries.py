@@ -30,23 +30,24 @@ def insert_price(): #inserir preço nos free to play
     }"""
 
 def get_games():
-    query = """select  ?name ?gameName  ?image ?description ?price
+    query = """select  ?name ?gameName  ?image ?description ?price ?site
         where 
         {
             ?name a game:game .
             ?name game:description ?description. 
             ?name game:name ?gameName.
             ?name game:image ?image.
-            ?name game:price ?price
+            ?name game:price ?price.
+            ?name game:website ?site.
         }"""
 
     result = queryDB(query)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"] ) for x in
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in
             result]
 
 
 def search_game(name, genre =""):
-    query = """select  ?name ?gameName  ?image ?description ?price
+    query = """select  ?name ?gameName  ?image ?description ?price ?site
             where 
             {
                 ?name a game:game .
@@ -54,6 +55,7 @@ def search_game(name, genre =""):
                 ?name game:name ?gameName.
                 ?name game:image ?image.
                 ?name game:price ?price.
+                ?name game:website ?site.
             """
     if genre:
         query+="""
@@ -63,11 +65,11 @@ def search_game(name, genre =""):
             }"""
     result = queryDB(query)
     print(result)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"]) for x in
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in
             result]
 
 def get_games_by_genre(genre):
-    query = """select  ?name ?gameName  ?image ?description ?price
+    query = """select  ?name ?gameName  ?image ?description ?price ?site
             where 
             {
                 ?name a game:game .
@@ -75,12 +77,13 @@ def get_games_by_genre(genre):
                 ?name game:name ?gameName.
                 ?name game:image ?image.
                 ?name game:price ?price.
+                ?name game:website ?site.
                 ?name game:genre \'""" + genre + """\'.
             }"""
 
 
     result = queryDB(query)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"]) for x in result]
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in result]
 def get_accounts():
     query = """
      select ?s
