@@ -38,12 +38,43 @@ def table(request):
     #return HttpResponse(html)
     return render(request, "table.html", tparams)
 
+global prev_acc
+prev_acc = "Select Account"
+
+
 def admin(request):
+    global prev_acc
+    account_list = get_accounts()
+    account_list.sort()
+    #print(account_list)
+    name = ""
+    nick = ""
+    games_owned = ""
+    if request.method == "GET":  # carregar a pag
+        sel_acc = "Select Account"
+    if request.method == "POST" and "accountSelect" in request.POST:
+        sel_acc = request.POST["accountSelect"]
+
+
+    if prev_acc == sel_acc:
+        sel_acc = "Select Account"
+    else:
+        prev_acc = sel_acc
+
+    if sel_acc != "Select Account":
+        person_info = get_person_info(str(sel_acc))
+        name = person_info.pop(0)
+        nick = person_info.pop(0)
+        games_owned = person_info.copy()
+
 
 
     tparams = {
-        'countries': "info",
-        'default_message': "Select country",
+        'accounts': account_list,
+        'default_message': sel_acc,
+        'name': name,
+        'nick': nick,
+        'games': games_owned,
         'error' : "error"
     }
     return render(request,'admin.html', tparams)

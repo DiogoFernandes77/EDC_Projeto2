@@ -2,7 +2,8 @@ from s4api.graphdb_api import GraphDBApi
 from s4api.swagger import ApiClient
 import json
 
-def get_genres(): #devolve uma lista com todos o géneros de jogos, sem repetidos por ordem alfabética
+
+def get_genres():  # devolve uma lista com todos o géneros de jogos, sem repetidos por ordem alfabética
     query = """select  ?genre
     where
     {
@@ -15,6 +16,7 @@ def get_genres(): #devolve uma lista com todos o géneros de jogos, sem repetido
     result = queryDB(query)
     return [x["genre"]["value"] for x in result]
 
+
 def get_games():
     query = """select  ?name ?gameName  ?image ?description
         where 
@@ -26,7 +28,9 @@ def get_games():
         }"""
 
     result = queryDB(query)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"]) for x in result]
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"]) for x in
+            result]
+
 
 def get_games_by_genre(genre):
     query = """select  ?name ?gameName  ?image ?description
@@ -42,9 +46,41 @@ def get_games_by_genre(genre):
     result = queryDB(query)
     return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"]) for x in
             result]
+def get_accounts():
+    query = """
+     select ?s
+      where { 
+	    ?s foaf:name ?name .
+        }  """
+    result = queryDB(query)
+
+    res = [(x["s"]["value"].split("http://GamerNetLibrary.com/")[1]) for x in result]
+    return res
+
+
+
+def get_person_info(pessoa):
+    query = """
+        select ?name ?nick ?games
+        where { 
+            game:""" + pessoa + """ foaf:name ?name.
+            game:""" + pessoa + """ foaf:nick ?nick.
+            game:""" + pessoa + """ game:owns ?games.
+            
+
+        } 
+    """
+
+    result = queryDB(query)
+    res = [result[0]["name"]["value"], result[0]["nick"]["value"]] #pos 0 n 1 = name, nick
+    for x in result:
+        res.append(x["games"]["value"])
+
+    return res
 
 def queryDB(query):
     query = """
+        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX game: <http://GamerNetLibrary.com/>
     """ + query
     endpoint = "http://localhost:7200"
@@ -74,5 +110,7 @@ def test():
     print(result_json["results"]["bindings"][1]["description"]["value"])
     print([x["image"]["value"] for x in result_json["results"]["bindings"]])
 
-#print(get_genres())
-#print(get_games_by_genre('Free to Play'))
+# print(get_genres())
+# print(get_games_by_genre('Free to Play'))
+#print(get_person_info("Account11"))
+#print(get_accounts())
