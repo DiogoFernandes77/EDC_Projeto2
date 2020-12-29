@@ -28,6 +28,26 @@ def get_games():
     result = queryDB(query)
     return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"]) for x in result]
 
+def search_game(name, genre =""):
+    query = """select  ?name ?gameName  ?image ?description
+            where 
+            {
+                ?name a game:game .
+                ?name game:description ?description. 
+                ?name game:name ?gameName.
+                ?name game:image ?image.
+            """
+    if genre:
+        query+="""
+                ?name game:genre \'""" + genre + """\'. """
+
+    query += """filter regex(?gameName,\'""" + name + """\',"i")  #filtra tds os jogos que contem name
+            }"""
+    result = queryDB(query)
+    print(result)
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"]) for x in
+            result]
+
 def get_games_by_genre(genre):
     query = """select  ?name ?gameName  ?image ?description
             where 
@@ -76,3 +96,5 @@ def test():
 
 #print(get_genres())
 #print(get_games_by_genre('Free to Play'))
+#print(search_game('Cou'))
+print(search_game('Cou', 'Action'))

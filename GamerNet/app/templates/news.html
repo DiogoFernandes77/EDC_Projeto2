@@ -106,9 +106,9 @@
                 <!-- Topbar Search -->
 
                 <div class="d-none d-sm-inline-block col-sm-3 navbar-search">
-                    <form class="form-inline active-purple-4" action="/" method="get">
-                        <input class="form-control form-control-lg bg-light border-0 small mr-2 w-75" type="text"
-                               placeholder="Search Game"
+                    <form class="form-inline active-purple-4" method="get" action="{% url 'store' %}" >
+                        <input id = search name = searchGame class="form-control form-control-lg bg-light border-0 small mr-2 w-75" type="text"
+                               value={{ place_message }}
                                aria-label="Search">
                         <button style="color:RoyalBlue;" type="Submit"><i class="fas fa-search" aria-hidden="false"></i>
                         </button>
@@ -116,8 +116,8 @@
 
                 </div>
                 <div class="d-none d-sm-inline-block col-sm-3 navbar-search">
-                    <form method="post" action="{% url 'store' %}">
-                        {% csrf_token %}
+                    <form method="get" action="{% url 'store' %}">
+
                         <select class="mdb-select md-form form-control bg-light border-0 small" id="sel"
                                 name="genderSelect" onchange="submit()" searchable="Search here..">
                             <option value="" disabled selected>{{ default_message }}</option>
@@ -171,7 +171,7 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
+                <p style = "color:#ff0000;">{{ warn_message }}</p>
                 <!-- Page Heading -->
                 <h1 class="h3 mb-2 text-gray-800">Game Store</h1>
                 <p class="mb-4">All games in a distance of a click</p>
