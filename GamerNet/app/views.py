@@ -90,36 +90,45 @@ def admin_update(request, countryID): #updating  view
 
     return render(request, 'admin.html', tparams)
 
-global prev_gen
-prev_gen = "Select game gender"
+global globl_gen
+globl_gen = "Select game gender"
 
 def store(request):
-    global prev_gen
+    global globl_gen
+    sel_gen = "Select game gender"
+    place_message = "Search a game"
+    warn_message = ""
     genres_list = get_genres()
     game_list = get_games()
 
     print(game_list)
     #print(genres_list)
 
+    print(request.GET)
 
-    if request.method == "GET":  # carregar a pag
-        sel_gen = "Select game gender"
-
-    if request.method == "POST" and "genderSelect" in request.POST:
-        sel_gen = request.POST["genderSelect"]
+    if request.method == "GET" and "genderSelect" in request.GET:
+        sel_gen = request.GET["genderSelect"]
+        globl_gen =sel_gen
+        game_list = get_games_by_genre(str(sel_gen))
         print(sel_gen)
 
-    if prev_gen == sel_gen:
-        sel_gen = "Select game gender"
-    else:
-        prev_gen = sel_gen
+    if request.method == "GET" and "searchGame" in request.GET:
+        game_name = request.GET["searchGame"]
+        place_message = game_name
+        if globl_gen != "Select game gender":
+            game_list = search_game(game_name, globl_gen)
+        else: game_list = search_game(game_name)
 
-    if sel_gen != "Select game gender":
-        game_list = get_games_by_genre(str(sel_gen))
+
+    if len(game_list) == 0:
+        warn_message = "Didn't find any results"
+
 
     tparams = {
         'default_message': sel_gen,
+        'warn_message': warn_message,
         'genres': genres_list,
+        'place_message': place_message,
         'game_properties': game_list
     }
     return render(request, 'news.html', tparams)
