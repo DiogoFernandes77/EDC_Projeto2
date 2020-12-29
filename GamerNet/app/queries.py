@@ -17,7 +17,7 @@ def get_genres():  # devolve uma lista com todos o géneros de jogos, sem repeti
     return [x["genre"]["value"] for x in result]
 
 
-def insert_price(): #inserir preço nos free to play
+def insert_price():  # inserir preço nos free to play
     """PREFIX game: <http://GamerNetLibrary.com/>
 
     INSERT{
@@ -28,6 +28,7 @@ def insert_price(): #inserir preço nos free to play
         ?name a game:game .
         ?name game:genre "Free to Play".
     }"""
+
 
 def get_games():
     query = """select  ?name ?gameName  ?image ?description ?price ?site
@@ -42,11 +43,12 @@ def get_games():
         }"""
 
     result = queryDB(query)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"],
+             x["price"]["value"], x["site"]["value"]) for x in
             result]
 
 
-def search_game(name, genre =""):
+def search_game(name, genre=""):
     query = """select  ?name ?gameName  ?image ?description ?price ?site
             where 
             {
@@ -58,16 +60,18 @@ def search_game(name, genre =""):
                 ?name game:website ?site.
             """
     if genre:
-        query+="""
+        query += """
                 ?name game:genre \'""" + genre + """\'. """
 
     query += """filter regex(?gameName,\'""" + name + """\',"i")  #filtra tds os jogos que contem name
             }"""
     result = queryDB(query)
-    #print(result)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in
+    # print(result)
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"],
+             x["price"]["value"], x["site"]["value"]) for x in
             result]
 
+0
 def get_game_info(appid):
     query = """select  ?gamename ?image ?description ?price ?site
             where 
@@ -78,14 +82,9 @@ def get_game_info(appid):
     			game:""" + appid + """ game:website ?site.
             }"""
 
-
     result = queryDB(query)
 
-
-    return [(x["image"]["value"], x["gamename"]["value"],   x["price"]["value"],x["site"]["value"]) for x in result]
-
-
-
+    return [(x["image"]["value"], x["gamename"]["value"], x["price"]["value"], x["site"]["value"]) for x in result]
 
 
 def get_games_by_genre(genre):
@@ -101,9 +100,11 @@ def get_games_by_genre(genre):
                 ?name game:genre \'""" + genre + """\'.
             }"""
 
-
     result = queryDB(query)
-    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in result]
+    return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"],
+             x["price"]["value"], x["site"]["value"]) for x in result]
+
+
 def get_accounts():
     query = """
      select ?s
@@ -116,25 +117,27 @@ def get_accounts():
     return res
 
 
-
 def get_person_info(pessoa):
     query = """
-        select ?name ?nick ?games
+        select ?name ?nick ?games ?logo
         where { 
             game:""" + pessoa + """ foaf:name ?name.
             game:""" + pessoa + """ foaf:nick ?nick.
             game:""" + pessoa + """ game:owns ?games.
+            game:""" + pessoa + """ foaf:logo ?logo.
             
 
         } 
     """
 
     result = queryDB(query)
-    res = [result[0]["name"]["value"], result[0]["nick"]["value"]] #pos 0 n 1 = name, nick
+    #print(result)
+    res = [result[0]["name"]["value"], result[0]["nick"]["value"], result[0]["logo"]["value"]]  # pos 0,1 n 2 = name, nick,logo
     for x in result:
         res.append(x["games"]["value"])
 
     return res
+
 
 def queryDB(query):
     query = """
@@ -168,15 +171,13 @@ def test():
     print(result_json["results"]["bindings"][1]["description"]["value"])
     print([x["image"]["value"] for x in result_json["results"]["bindings"]])
 
-
-#print(get_genres())
-#print(get_games_by_genre('Free to Play'))
-#print(search_game('Counter'))
-#print(search_game('Cou', 'Action'))
-#print(get_person_info("Account11"))
-#print(get_accounts())
-#print(insert_price())
-#print(get_games())
-#print(get_game_info("10"))
-#insert_price()
-
+# print(get_genres())
+# print(get_games_by_genre('Free to Play'))
+# print(search_game('Counter'))
+# print(search_game('Cou', 'Action'))
+print(get_person_info("Account11"))
+# print(get_accounts())
+# print(insert_price())
+# print(get_games())
+# print(get_game_info("10"))
+# insert_price()

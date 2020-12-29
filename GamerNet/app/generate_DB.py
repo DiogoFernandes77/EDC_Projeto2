@@ -51,12 +51,15 @@ def generation():
                     g.add((subject, NS.genre, Literal(genre["description"])))
             if "price_overview" in game.keys():
                 g.add((subject, NS.price, Literal(game["price_overview"]["final_formatted"])))
+            else:
+                g.add((subject, NS.price, Literal("0,00\u20ac")))
 
             count += 1
 
 
 
 def people_generation():
+
     for id in range(0, person_number):
         name = random.choice(names)
         surname = random.choice(surnames)
@@ -66,7 +69,7 @@ def people_generation():
         g.add((subject, RDF.type, FOAF.Person))
         g.add((subject,FOAF.nick,Literal(username)))
         g.add((subject,FOAF.name,Literal(name + " " + surname)))
-
+        g.add((subject,FOAF.logo, Literal('/static/img/Pic' + str(id) + '.jpeg')))
         #games owned
         n_games_owned = random.randint(1, 10)
         games_list = list(g.subjects(RDF.type, NS.game))

@@ -50,6 +50,7 @@ def admin(request):
     name = ""
     nick = ""
     games_owned = ""
+    logo = ""
     if request.method == "GET":  # carregar a pag
         sel_acc = "Select Account"
     if request.method == "POST" and "accountSelect" in request.POST:
@@ -65,6 +66,7 @@ def admin(request):
         person_info = get_person_info(str(sel_acc))
         name = person_info.pop(0)
         nick = person_info.pop(0)
+        logo = person_info.pop(0)
         games_owned = person_info.copy()
     games_owned_info = []
     for game in games_owned:
@@ -78,6 +80,7 @@ def admin(request):
         'default_message': sel_acc,
         'name': name,
         'nick': nick,
+        'logo':logo,
         'games': games_owned_info,
         'error' : "error"
     }
