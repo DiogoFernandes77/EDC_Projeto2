@@ -64,9 +64,29 @@ def search_game(name, genre =""):
     query += """filter regex(?gameName,\'""" + name + """\',"i")  #filtra tds os jogos que contem name
             }"""
     result = queryDB(query)
-    print(result)
+    #print(result)
     return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"], x["price"]["value"], x["site"]["value"]) for x in
             result]
+
+def get_game_info(appid):
+    query = """select  ?gamename ?image ?description ?price ?site
+            where 
+            {
+                game:""" + appid + """ game:name ?gamename.
+    			game:""" + appid + """ game:image ?image.
+    			game:""" + appid + """ game:price ?price.
+    			game:""" + appid + """ game:website ?site.
+            }"""
+
+
+    result = queryDB(query)
+
+
+    return [(x["image"]["value"], x["gamename"]["value"],   x["price"]["value"],x["site"]["value"]) for x in result]
+
+
+
+
 
 def get_games_by_genre(genre):
     query = """select  ?name ?gameName  ?image ?description ?price ?site
@@ -151,10 +171,12 @@ def test():
 
 #print(get_genres())
 #print(get_games_by_genre('Free to Play'))
-#print(search_game('Cou'))
+#print(search_game('Counter'))
 #print(search_game('Cou', 'Action'))
 #print(get_person_info("Account11"))
 #print(get_accounts())
 #print(insert_price())
-print(get_games())
+#print(get_games())
+#print(get_game_info("10"))
+#insert_price()
 

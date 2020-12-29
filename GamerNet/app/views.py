@@ -66,7 +66,11 @@ def admin(request):
         name = person_info.pop(0)
         nick = person_info.pop(0)
         games_owned = person_info.copy()
-
+    games_owned_info = []
+    for game in games_owned:
+        game = game.split("http://GamerNetLibrary.com/")[1]
+        for attrib in get_game_info(game):
+            games_owned_info.append(attrib)
 
 
     tparams = {
@@ -74,7 +78,7 @@ def admin(request):
         'default_message': sel_acc,
         'name': name,
         'nick': nick,
-        'games': games_owned,
+        'games': games_owned_info,
         'error' : "error"
     }
     return render(request,'admin.html', tparams)

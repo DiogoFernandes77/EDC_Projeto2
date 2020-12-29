@@ -165,40 +165,39 @@
 
                         <div class="col-sm-3 col-md-3 col-xs-8 image-container">
                             <div class="account_name">
-                                <p> {{ name }}</p>
+                                <h2> <b>Name: </b>{{ name }}</h2>
                             </div>
 
                         </div>
 
                         <div class="col-sm-3 col-md-3 col-xs-8 image-container">
                             <div class="account_nick">
-                                <p> {{ nick }}</p>
+                                <h2><b>Username: </b>{{ nick }}</h2>
                             </div>
 
                         </div>
-                        {% for game in games %}
-                    <div class="row" style = "padding:10px;">
+
+                    </div>
+                <div class="row" style = "padding:10px;"> <h2><b>Games owned:</b></h2></div>
+                        {% for image,gamename,price,site in games %}
+                        <div class="row" style = "padding:10px;">
 
                         <div class="col-sm-3 col-md-3 col-xs-8 image-container">
                             <img style="width: 100%" src={{ image }}>
 
                         </div>
                         <div class="col-sm-6 col-md-6 col-xs-16">
+                            <p style =  "font-size: 20px; color: black;"><a href={{site }}>{{ gamename }}</a> <p>
                             <div class="job_descp">
-                                <p>{{ game }}</p>
+
+                            <p>Price: {{price }}  </p>
                             </div>
                         </div>
                     </div>
 
-                {% endfor %}
+                         {% endfor %}
 
 
-
-
-
-
-
-                    </div>
 
 
             </div>
