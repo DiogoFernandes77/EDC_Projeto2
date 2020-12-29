@@ -139,6 +139,36 @@ def get_person_info(pessoa):
     return res
 
 
+def get_no_friends(acc):
+    query = """
+            select ?name ?nick ?account
+            where { 
+                ?account foaf:name ?name.
+                ?account foaf:nick ?nick.
+                FILTER (
+                    !EXISTS {
+                        ?account foaf:knows game:""" + acc + """.
+                    }
+                )
+            } 
+        """
+    result = queryDB(query)
+    return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"]) for x in result]
+
+
+def get_friends(acc):
+    query = """
+                select ?name ?nick ?account
+                where { 
+                    ?account foaf:name ?name.
+                    ?account foaf:nick ?nick.
+                    ?account foaf:knows game:""" + acc + """.
+
+                } 
+            """
+    result = queryDB(query)
+    return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"]) for x in result]
+
 def queryDB(query):
     query = """
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -175,7 +205,7 @@ def test():
 # print(get_games_by_genre('Free to Play'))
 # print(search_game('Counter'))
 # print(search_game('Cou', 'Action'))
-print(get_person_info("Account11"))
+#print(get_person_info("Account11"))
 # print(get_accounts())
 # print(insert_price())
 # print(get_games())

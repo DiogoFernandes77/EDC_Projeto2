@@ -29,13 +29,33 @@ def index(request):
     return render(request, 'index.html', tparams)
 
 def table(request):
+    people = get_no_friends('Account1')
+    color_people = "RoyalBlue"
+    color_friends = "white"
+    make_action = "Add Friend"
 
-    tparams =  {
-        'xml' : "html",
-        'sel_date' : "sel_date"
+    if request.method == "GET" and "myinput" in request.GET:
+        sel = request.GET["myinput"]
+        if sel == "Friends":
+            color_people = "white"
+            color_friends = "RoyalBlue"
+            make_action = "Delete Friend"
+
+            people = get_friends('Account1')
+        else:
+            color_people = "RoyalBlue"
+            color_friends = "white"
+            make_action = "Add Friend"
+
+    tparams = {
+        'xml': "html",
+        'sel_date': "sel_date",
+        'people': people,
+        'color1': color_people,
+        'color2': color_friends,
+        'makeAction': make_action
     }
 
-    #return HttpResponse(html)
     return render(request, "table.html", tparams)
 
 global prev_acc

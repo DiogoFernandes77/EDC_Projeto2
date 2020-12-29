@@ -107,9 +107,28 @@
 
                 <!-- Topbar Search -->
                 <!-- Topbar Search -->
-                <div class="d-none d-sm-inline-block mr-auto col-sm-5 navbar-search">
-                    <h4>Check SARS-CoV-2 information </h4>
-                </div>
+                <form method="get" action="{% url 'table' %}">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                        <li class="nav-item">
+                            <button class="nav-link" style=" background-color:{{ color1 }};"id="people-tab"  onclick = "submit1()">Make Friends</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" style=" background-color:{{ color2 }};"id="friends-tab"  onclick = "submit2()">Friends</button>
+                        </li>
+                        <input id="submitIn" type="hidden" name="myinput" value="0"/>
+                    </ul>
+
+                </form>
+
+                <script>
+                    function submit1() { // trigger action
+                        document.getElementById("submitIn").value = "People";
+                    }
+                    function submit2() { // trigger action
+                        document.getElementById("submitIn").value = "Friends";
+                    }
+                </script>
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -151,33 +170,16 @@
 
                 <div class="row">
                     <div class="col-sm" align="left">
-                        <h1 class="h3 mb-2 text-gray-800">Table Set</h1>
+                        <h1 class="h3 mb-2 text-gray-800"></h1>
                     </div>
 
-                    <div class="col-sm" align="right">
-                        <form method="post" action="{% url 'table' %}">
-                            {% csrf_token %}
-                            <input align="center" name="selData" id="date" type="date"/>
-                            <button type="submit">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </form>
-                    </div>
+
                 </div>
                 <!-- DataTales  -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Cases worldwide: {{ sel_date }}</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
 
-                            {% block content %}
-                            {% endblock %}
 
-                        </div>
-                    </div>
-                </div>
+                {% block content %}
+                {% endblock %}
 
             </div>
             <!-- /.container-fluid -->
@@ -185,15 +187,6 @@
         </div>
         <!-- End of Main Content -->
 
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->
