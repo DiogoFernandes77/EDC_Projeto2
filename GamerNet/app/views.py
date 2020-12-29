@@ -112,13 +112,14 @@ def store(request):
         game_list = get_games_by_genre(str(sel_gen))
         print(sel_gen)
 
-    if request.method == "GET" and "searchGame" in request.GET:
+    elif request.method == "GET" and "searchGame" in request.GET:
         game_name = request.GET["searchGame"]
         place_message = game_name
         if globl_gen != "Select game gender":
             game_list = search_game(game_name, globl_gen)
         else: game_list = search_game(game_name)
 
+    else: globl_gen = "Select game gender"
 
     if len(game_list) == 0:
         globl_gen = "Select game gender"
