@@ -166,6 +166,10 @@ def store(request):
 
     #print(request.GET)
 
+    if request.method == "GET" and "buyID" in request.GET:
+        game_id = request.GET["buyID"].split("http://GamerNetLibrary.com/")[1]
+        buy_game(account, game_id)
+
     if request.method == "GET" and "genderSelect" in request.GET:
         sel_gen = request.GET["genderSelect"]
         globl_gen =sel_gen
@@ -184,6 +188,8 @@ def store(request):
     if len(game_list) == 0:
         globl_gen = "Select game gender"
         warn_message = "Didn't find any results"
+
+
 
 
     tparams = {

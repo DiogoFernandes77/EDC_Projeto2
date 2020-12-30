@@ -192,7 +192,6 @@ def get_friends(acc):
     return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"], x["logo"]["value"]) for x in result]
 
 def make_friend(friend1, friend2):
-
     query = """
             insert data{
                 game:""" + friend1 + """ foaf:knows game:""" + friend2 + """.
@@ -202,13 +201,21 @@ def make_friend(friend1, friend2):
     print(queryDB(query))
 
 def delete_friend(friend1, friend2):
-
     query = """
             delete data{
                 game:""" + friend1 + """ foaf:knows game:""" + friend2 + """.
             }
         """
 
+    print(queryDB(query))
+
+def buy_game(acc, game_id):
+    query = """
+    
+            insert data{
+                game:"""+acc+""" game:owns game:"""+game_id+""".
+            }
+    """
     print(queryDB(query))
 
 def queryDB(query):
