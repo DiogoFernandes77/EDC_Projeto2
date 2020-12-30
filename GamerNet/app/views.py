@@ -8,6 +8,7 @@ from django.shortcuts import render
 from django.urls import reverse
 
 from app.queries import *
+from app.queries_dbpedia import *
 
 global prev_id
 prev_id = 0
@@ -15,15 +16,27 @@ prev_id = 0
 
 
 def index(request):
+    search_input = "Search something"
+    info = " "
+    if request.method == "GET" and "searchDBpedia" in request.GET:
+        search_input = request.GET["searchDBpedia"]
 
-    #print(info)
+        print(search_input)
+
+    if search_input != "Search something":
+        info = dbpedia_get_decription(search_input)
+        if len(info) == 0:
+            info = "Nothing was found"
+        else:
+            info = info[0]
+
+
+
     tparams = {
-        'countries' : "info",
-        'default_message': "Game categories",
-        'total_cases' : "total_cases",
-        'total_deaths' : "total_deaths",
-        'array_cases' : "array_monthCases",
-        'array_deaths' : "array_monthDeaths",
+        'search_input': search_input,
+        'searched': search_input,
+        'info': info,
+
     }
 
     return render(request, 'index.html', tparams)
@@ -57,12 +70,12 @@ def table(request):
     if request.method == "GET" and "friendAction" in request.GET:
         if request.GET["friendAction"] != "See Games":
             friend_account = request.GET["friendAction"].split("http://GamerNetLibrary.com/")[1]
-            print(make_action)
+            #print(make_action)
             if make_action == "Add Friend":
                 make_friend(account, friend_account)
                 make_friend(friend_account,account ) #friend is mutual
             else:
-                print("deleting")
+                #print("deleting")
                 delete_friend(account, friend_account)
                 delete_friend(friend_account, account)
 
@@ -148,16 +161,16 @@ def store(request):
     genres_list = get_genres()
     game_list = get_games(account)
 
-    print(game_list)
+    #print(game_list)
     #print(genres_list)
 
-    print(request.GET)
+    #print(request.GET)
 
     if request.method == "GET" and "genderSelect" in request.GET:
         sel_gen = request.GET["genderSelect"]
         globl_gen =sel_gen
         game_list = get_games_by_genre(str(sel_gen), account)
-        print(sel_gen)
+        #print(sel_gen)
 
     elif request.method == "GET" and "searchGame" in request.GET:
         game_name = request.GET["searchGame"]

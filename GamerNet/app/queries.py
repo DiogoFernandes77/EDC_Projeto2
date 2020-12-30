@@ -1,3 +1,6 @@
+import time
+
+from SPARQLWrapper import SPARQLWrapper, JSON
 from s4api.graphdb_api import GraphDBApi
 from s4api.swagger import ApiClient
 import json
@@ -229,6 +232,8 @@ def queryDB(query):
         return result_json["results"]["bindings"]
 
 
+
+
 def test():
     result_json = queryDB("""select  ?name ?gameName  ?image ?description
     where 
@@ -241,6 +246,8 @@ def test():
 
     print(result_json["results"]["bindings"][1]["description"]["value"])
     print([x["image"]["value"] for x in result_json["results"]["bindings"]])
+
+
 
 # print(get_genres())
 # print(get_games_by_genre('Free to Play'))
