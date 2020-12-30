@@ -12,8 +12,6 @@ from app.queries import *
 global prev_id
 prev_id = 0
 
-
-
 def index(request):
 
     #print(info)
@@ -33,8 +31,8 @@ color_friends = "white"
 make_action = "Add Friend"
 sel = "Make Friend"
 def table(request):
-    account = 'Account1'
-    people = get_no_friends(account)
+    account = globl_acc
+
 
     global color_people
     global color_friends
@@ -43,28 +41,32 @@ def table(request):
     if request.method == "GET" and "myinput" in request.GET:
         sel = request.GET["myinput"]
 
-    if sel == "Friends":
-        color_people = "white"
-        color_friends = "RoyalBlue"
-        make_action = "Delete Friend"
-
-        people = get_friends('Account1')
-    else:
-        color_people = "RoyalBlue"
-        color_friends = "white"
-        make_action = "Add Friend"
-
     if request.method == "GET" and "friendAction" in request.GET:
         if request.GET["friendAction"] != "See Games":
             friend_account = request.GET["friendAction"].split("http://GamerNetLibrary.com/")[1]
             print(make_action)
             if make_action == "Add Friend":
                 make_friend(account, friend_account)
-                make_friend(friend_account,account ) #friend is mutual
+                make_friend(friend_account, account)  # friend is mutual
             else:
                 print("deleting")
                 delete_friend(account, friend_account)
                 delete_friend(friend_account, account)
+
+    people = get_no_friends(account)
+
+    if sel == "Friends":
+        color_people = "white"
+        color_friends = "RoyalBlue"
+        make_action = "Delete Friend"
+
+        people = get_friends(account)
+    else:
+        color_people = "RoyalBlue"
+        color_friends = "white"
+        make_action = "Add Friend"
+
+
 
 
     tparams = {
@@ -73,17 +75,18 @@ def table(request):
         'people': people,
         'color1': color_people,
         'color2': color_friends,
-        'makeAction': make_action
+        'makeAction': make_action,
+        'loggedAccount': globl_acc
     }
 
     return render(request, "table.html", tparams)
 
-global prev_acc
-prev_acc = "Select Account"
-
+global globl_acc
+globl_acc = "Account1"
 
 def admin(request):
-    global prev_acc
+    global globl_acc
+
     account_list = get_accounts()
     account_list.sort()
     #print(account_list)
@@ -91,19 +94,13 @@ def admin(request):
     nick = ""
     games_owned = ""
     logo = ""
-    if request.method == "GET":  # carregar a pag
-        sel_acc = "Select Account"
+
     if request.method == "POST" and "accountSelect" in request.POST:
         sel_acc = request.POST["accountSelect"]
+        globl_acc = sel_acc
 
-
-    if prev_acc == sel_acc:
-        sel_acc = "Select Account"
-    else:
-        prev_acc = sel_acc
-
-    if sel_acc != "Select Account":
-        person_info = get_person_info(str(sel_acc))
+    if globl_acc != "Select Account":
+        person_info = get_person_info(str(globl_acc))
         name = person_info.pop(0)
         nick = person_info.pop(0)
         logo = person_info.pop(0)
@@ -117,11 +114,12 @@ def admin(request):
 
     tparams = {
         'accounts': account_list,
-        'default_message': sel_acc,
+        'default_message': globl_acc,
         'name': name,
         'nick': nick,
         'logo':logo,
         'games': games_owned_info,
+        'loggedAccount': globl_acc,
         'error' : "error"
     }
     return render(request,'admin.html', tparams)
@@ -142,7 +140,7 @@ globl_gen = "Select game gender"
 
 def store(request):
     global globl_gen
-    account = "Account1" #alterar p conta selecionada
+    account = globl_acc
     place_message = "Search a game"
     warn_message = ""
     genres_list = get_genres()
@@ -156,6 +154,7 @@ def store(request):
     if request.method == "GET" and "buyID" in request.GET:
         game_id = request.GET["buyID"].split("http://GamerNetLibrary.com/")[1]
         buy_game(account, game_id)
+        game_list = get_games(account)
 
     if request.method == "GET" and "genderSelect" in request.GET:
         sel_gen = request.GET["genderSelect"]
@@ -184,6 +183,7 @@ def store(request):
         'warn_message': warn_message,
         'genres': genres_list,
         'place_message': place_message,
+        'loggedAccount': globl_acc,
         'game_properties': game_list
     }
     return render(request, 'news.html', tparams)

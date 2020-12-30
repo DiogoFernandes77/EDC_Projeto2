@@ -118,6 +118,8 @@
 
                 </div>
 
+                <div class="d-none d-sm-inline-block col-sm-6 navbar-search">
+                    <p style="text-align:right">Logged as: {{ loggedAccount }}</p>
                 <script>
                     function submit() { // trigger action
                         document.getElementById("submitIn").value = "1";
@@ -164,7 +166,7 @@
             <div class="container-fluid">
                     <div class="row" style = "padding:10px;">
                         <div >
-                            <img src={{ logo }} width="200" height="200"></i>
+                            <img src={{ logo }} width="200" height="200" alt=""></i>
 
                         </div>
 
@@ -181,26 +183,20 @@
 
                     </div>
                 <div class="row" style = "padding:10px;"> <h2><b>Games owned:</b></h2></div>
-
+                    <div class="row">
                         {% for image,gamename,price,site in games %}
-                        <div class="row" style = "padding:10px;">
 
-                            <div class="col-sm-3 col-md-3 col-xs-8 image-container">
+
+                            <div class = "col-md-3 .mt-1">
+                                <h5><a href={{site }}>{{ gamename }}</a> </h5>
+
                                 <img style="width: 100%" src={{ image }}>
-
+                                <h1></h1>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-xs-16">
-                                <p style =  "font-size: 20px; color: black;"><a href={{site }}>{{ gamename }}</a> <p>
-                                <div class="job_descp">
 
-                                <p>Price: {{price }}  </p>
-                                </div>
-                            </div>
-                        </div>
 
                          {% endfor %}
-
-
+                    </div>
 
 
             </div>
