@@ -30,7 +30,7 @@ def insert_price():  # inserir preço nos free to play
     }"""
 
 
-def get_games():
+def get_games(acc): #jogos que a account logada não tem e pode comprar
     query = """select  ?name ?gameName  ?image ?description ?price ?site
         where 
         {
@@ -40,7 +40,15 @@ def get_games():
             ?name game:image ?image.
             ?name game:price ?price.
             ?name game:website ?site.
-        }"""
+             FILTER (
+                    !EXISTS {
+                       game:""" + acc + """ game:owns ?name.
+                    }
+            )
+        }
+       
+        """
+
 
     result = queryDB(query)
     return [(x["image"]["value"], x["gameName"]["value"], x["description"]["value"], x["name"]["value"],
@@ -48,7 +56,7 @@ def get_games():
             result]
 
 
-def search_game(name, genre=""):
+def search_game(name, acc, genre=""):
     query = """select  ?name ?gameName  ?image ?description ?price ?site
             where 
             {
@@ -58,6 +66,11 @@ def search_game(name, genre=""):
                 ?name game:image ?image.
                 ?name game:price ?price.
                 ?name game:website ?site.
+                FILTER (
+                    !EXISTS {
+                       game:""" + acc + """ game:owns ?name.
+                    }
+            )
             """
     if genre:
         query += """
@@ -87,7 +100,7 @@ def get_game_info(appid):
     return [(x["image"]["value"], x["gamename"]["value"], x["price"]["value"], x["site"]["value"]) for x in result]
 
 
-def get_games_by_genre(genre):
+def get_games_by_genre(genre, acc):
     query = """select  ?name ?gameName  ?image ?description ?price ?site
             where 
             {
@@ -97,7 +110,12 @@ def get_games_by_genre(genre):
                 ?name game:image ?image.
                 ?name game:price ?price.
                 ?name game:website ?site.
-                ?name game:genre \'""" + genre + """\'.
+                ?name game:genre \'""" + genre + """\'
+                FILTER (
+                    !EXISTS {
+                       game:""" + acc + """ game:owns ?name.
+                    }
+            ).
             }"""
 
     result = queryDB(query)
@@ -170,6 +188,26 @@ def get_friends(acc):
     result = queryDB(query)
     return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"], x["logo"]["value"]) for x in result]
 
+def make_friend(friend1, friend2):
+
+    query = """
+            insert data{
+                game:""" + friend1 + """ foaf:knows game:""" + friend2 + """.
+            }
+        """
+
+    print(queryDB(query))
+
+def delete_friend(friend1, friend2):
+
+    query = """
+            delete data{
+                game:""" + friend1 + """ foaf:knows game:""" + friend2 + """.
+            }
+        """
+
+    print(queryDB(query))
+
 def queryDB(query):
     query = """
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -179,13 +217,15 @@ def queryDB(query):
     repo = "games"
     client = ApiClient(endpoint=endpoint)
     accessor = GraphDBApi(client)
-    if query.find('update') != -1 or query.find('insert') != -1:
+    if query.find('update') != -1 or query.find('insert') != -1 or query.find('delete') != -1:
+        print("update")
         payload = {"update": query}
         accessor.sparql_update(body=payload, repo_name=repo)
     else:
         payload = {"query": query}
         result = accessor.sparql_select(body=payload, repo_name=repo)
         result_json = json.loads(result)
+
         return result_json["results"]["bindings"]
 
 
@@ -213,3 +253,6 @@ def test():
 # print(get_game_info("10"))
 # insert_price()
 #print(get_no_friends("Account1"))
+#print(get_games("Account1"))
+#print(search_game("Counter", "Account1"))
+#print(make_friend("Account1", "Account7"))

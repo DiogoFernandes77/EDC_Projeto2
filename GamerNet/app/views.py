@@ -28,24 +28,44 @@ def index(request):
 
     return render(request, 'index.html', tparams)
 
+color_people = "RoyalBlue"
+color_friends = "white"
+make_action = "Add Friend"
+sel = "Make Friend"
 def table(request):
-    people = get_no_friends('Account1')
-    color_people = "RoyalBlue"
-    color_friends = "white"
-    make_action = "Add Friend"
+    account = 'Account1'
+    people = get_no_friends(account)
 
+    global color_people
+    global color_friends
+    global make_action
+    global sel
     if request.method == "GET" and "myinput" in request.GET:
         sel = request.GET["myinput"]
-        if sel == "Friends":
-            color_people = "white"
-            color_friends = "RoyalBlue"
-            make_action = "Delete Friend"
 
-            people = get_friends('Account1')
-        else:
-            color_people = "RoyalBlue"
-            color_friends = "white"
-            make_action = "Add Friend"
+    if sel == "Friends":
+        color_people = "white"
+        color_friends = "RoyalBlue"
+        make_action = "Delete Friend"
+
+        people = get_friends('Account1')
+    else:
+        color_people = "RoyalBlue"
+        color_friends = "white"
+        make_action = "Add Friend"
+
+    if request.method == "GET" and "friendAction" in request.GET:
+        if request.GET["friendAction"] != "See Games":
+            friend_account = request.GET["friendAction"].split("http://GamerNetLibrary.com/")[1]
+            print(make_action)
+            if make_action == "Add Friend":
+                make_friend(account, friend_account)
+                make_friend(friend_account,account ) #friend is mutual
+            else:
+                print("deleting")
+                delete_friend(account, friend_account)
+                delete_friend(friend_account, account)
+
 
     tparams = {
         'xml': "html",
@@ -122,11 +142,11 @@ globl_gen = "Select game gender"
 
 def store(request):
     global globl_gen
-
+    account = "Account1" #alterar p conta selecionada
     place_message = "Search a game"
     warn_message = ""
     genres_list = get_genres()
-    game_list = get_games()
+    game_list = get_games(account)
 
     print(game_list)
     #print(genres_list)
@@ -136,15 +156,15 @@ def store(request):
     if request.method == "GET" and "genderSelect" in request.GET:
         sel_gen = request.GET["genderSelect"]
         globl_gen =sel_gen
-        game_list = get_games_by_genre(str(sel_gen))
+        game_list = get_games_by_genre(str(sel_gen), account)
         print(sel_gen)
 
     elif request.method == "GET" and "searchGame" in request.GET:
         game_name = request.GET["searchGame"]
         place_message = game_name
         if globl_gen != "Select game gender":
-            game_list = search_game(game_name, globl_gen)
-        else: game_list = search_game(game_name)
+            game_list = search_game(game_name, account, globl_gen)
+        else: game_list = search_game(game_name, account )
 
     else: globl_gen = "Select game gender"
 
