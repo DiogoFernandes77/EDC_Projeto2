@@ -187,12 +187,23 @@
                             <p style =  "font-size: 20px; color: black;"><a href={{site }}>{{ gameName }}</a> <p>
                             <div class="job_descp">
                                 <p>{{ description }}</p>
-                            <p>Price: {{price }}  <button class="btn btn-default"><i class="fas fa-shopping-cart"> </i></button></p>
+                            <form id= buy{{ id }} method = "get" action="{% url 'store' %}">
+                                <input id="input{{ id }}" type="hidden" name="buyID" value="0"/>
+                                <p>Price: {{price }}  <button onclick = "submitBuy('{{ id }}')"class="btn btn-default"><i class="fas fa-shopping-cart"> </i></button></p>
+                            </form>
                             </div>
                         </div>
                     </div>
 
                 {% endfor %}
+
+                <script>
+                    function submitBuy(id){
+                        document.getElementById("input"+id).value = id;
+                        document.getElementById("buy"+id).submit();
+
+                    }
+                </script>
             
                     <script src="/static/vendor/jquery/jquery.min.js"></script>
                     <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
