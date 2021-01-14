@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d6eecc8-c3b6-48a4-a429-6ecce2117ad3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GamerNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamerNet/app/graph.n3" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/graph.n3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamerNet/app/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/templates/table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/templates/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/GamerNet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/GamerNet/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/test_action.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GamerNet/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamerNet/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +96,7 @@
       <workItem from="1610583576418" duration="7904000" />
       <workItem from="1610623532962" duration="7455000" />
       <workItem from="1610631281719" duration="89000" />
+      <workItem from="1610652024826" duration="7745000" />
     </task>
     <servers />
   </component>

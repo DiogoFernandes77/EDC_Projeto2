@@ -43,7 +43,7 @@ color_people = "RoyalBlue"
 color_friends = "white"
 make_action = "Add Friend"
 sel = "Make Friend"
-def table(request):
+def social(request):
     account = globl_acc
 
 
@@ -145,13 +145,13 @@ def table(request):
         'loggedAccount': globl_acc
     }
 
-    return render(request, "table.html", tparams)
+    return render(request, "datasocial.html", tparams)
 
 
 global globl_acc
 globl_acc = "Account1"
 
-def admin(request):
+def myaccount(request):
     global globl_acc
 
     account_list = get_accounts()
@@ -189,18 +189,9 @@ def admin(request):
         'loggedAccount': globl_acc,
         'error' : "error"
     }
-    return render(request,'admin.html', tparams)
-
-def admin_update(request, countryID): #updating  view
+    return render(request,'myaccount.html', tparams)
 
 
-    tparams = {
-        'countries': "info",
-        'default_message': "country_name",
-        'error' :"error"
-    }
-
-    return render(request, 'admin.html', tparams)
 
 global globl_gen
 globl_gen = "Select game gender"
@@ -247,7 +238,7 @@ def store(request):
         'loggedAccount': globl_acc,
         'game_properties': game_list
     }
-    return render(request, 'news.html', tparams)
+    return render(request, 'shop.html', tparams)
 
 
 

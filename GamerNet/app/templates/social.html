@@ -9,15 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GamerNet - Store</title>
+    <title>GamerNet - People</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="/static/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="/static/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -41,7 +43,7 @@
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item">
+        <li class="nav-item ">
             <a class="nav-link" href="/index">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Library</span></a>
@@ -51,8 +53,8 @@
         <hr class="sidebar-divider">
 
         <!-- Nav Item - Charts -->
-        <li class="nav-item active">
-            <a class="nav-link" href="/news">
+        <li class="nav-item">
+            <a class="nav-link" href="/shop">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Game shop</span></a>
         </li>
@@ -62,17 +64,18 @@
 
 
         <!-- Nav Item - Tables -->
-        <li class="nav-item">
-            <a class="nav-link" href="/tables">
+        <li class="nav-item active">
+            <a class="nav-link" href="/social">
                 <i class="fas fa-fw fa-table"></i>
                 <span>People</span></a>
         </li>
 
         <!-- Divider -->
+
         <hr class="sidebar-divider d-none d-md-block">
 
-        <li class="nav-item">
-            <a class="nav-link" href="/admin">
+        <li class="nav-item ">
+            <a class="nav-link" href="/myaccount">
                 <i class="fas fa-user"></i>
                 <span>My account</span></a>
         </li>
@@ -95,7 +98,7 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-6 static-top shadow">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -105,42 +108,44 @@
                 <!-- Topbar Search -->
                 <!-- Topbar Search -->
 
-                <div class="d-none d-sm-inline-block col-sm-3 navbar-search">
-                    <form class="form-inline active-purple-4" method="get" action="{% url 'store' %}" >
-                        <input id = search name = searchGame class="form-control form-control-lg bg-light border-0 small mr-2 w-75" type="text"
-                               value={{ place_message }}
-                               aria-label="Search">
-                        <button style="color:RoyalBlue;" type="Submit"><i class="fas fa-search" aria-hidden="false"></i>
-                        </button>
-                    </form>
+                <form method="get" action="{% url 'social' %}">
+                    <row>
+                        <ul class="nav nav-tabs" id="myTab" >
 
-                </div>
-                <div class="d-none d-sm-inline-block col-sm-3 navbar-search">
-                    <form method="get" action="{% url 'store' %}">
+                            <li class="nav-item">
+                                <button class="nav-link" style=" background-color:{{ color1 }};"id="people-tab"  onclick = "submit1()">People</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" style=" background-color:{{ color3 }};"id="suggested-tab"  onclick = "submit3()">Suggested</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" style=" background-color:{{ color2 }};"id="friends-tab"  onclick = "submit2()">Friends</button>
+                            </li>
 
-                        <select class="mdb-select md-form form-control bg-light border-0 small" id="sel"
-                                name="genderSelect" onchange="submit()" searchable="Search here..">
-                            <option value="" disabled selected>{{ default_message }}</option>
-                            {% for name in genres %}
-                                <option>{{ name }}</option>
-                            {% endfor %}
-                        </select>
-                        <input id="submitIn" type="hidden" name="myinput" value="0"/>
-                    </form>
-                </div>
+                            <input id="submitIn" type="hidden" name="myinput" value="0"/>
+                        </ul>
+                    </row>
 
-                <div class="d-none d-sm-inline-block col-sm-6 navbar-search">
+                </form>
+
+                <div class="d-none d-sm-inline-block col-sm-10 navbar-search">
                     <p style="text-align:right">Logged as: {{ loggedAccount }}</p>
+
                 <script>
-                    function submit() { // trigger action
-                        document.getElementById("submitIn").value = "1";
+                    function submit1() { // trigger action
+                        document.getElementById("submitIn").value = "People";
                     }
-
+                    function submit2() { // trigger action
+                        document.getElementById("submitIn").value = "Friends";
+                    }
+                    function submit3() { // trigger action
+                        document.getElementById("submitIn").value = "Sugggested";
+                    }
                 </script>
-
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
+
 
                     <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                     <li class="nav-item dropdown no-arrow d-sm-none">
@@ -167,65 +172,86 @@
                     </li>
 
                 </ul>
-
+                </div>
             </nav>
+
+
             <!-- End of Topbar -->
+
+            <!-- Page Heading-->
+
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-                <p style = "color:#ff0000;">{{ warn_message }}</p>
-                <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Game Store</h1>
-                <p class="mb-4">All games in a distance of a click</p>
 
-                {% for image, gameName, description, id, price, site in game_properties %}
-                    <div class="row" style = "padding:10px;">
-
-                        <div class="col-sm-3 col-md-3 col-xs-8 image-container">
-                            <img style="width: 100%" src={{ image }}>
-
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-xs-16">
-                            <p style =  "font-size: 20px; color: black;"><a href={{site }}>{{ gameName }}</a> <p>
-                            <div class="job_descp">
-                                <p>{{ description }}</p>
-                            <form id= buy{{ id }} method = "get" action="{% url 'store' %}">
-                                <input id="input{{ id }}" type="hidden" name="buyID" value="0"/>
-                                <p>Price: {{price }}  <button onclick = "submitBuy('{{ id }}')"class="btn btn-default"><i class="fas fa-shopping-cart"> </i></button></p>
-                            </form>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-sm" align="left">
+                        <h1 class="h3 mb-2 text-gray-800"></h1>
                     </div>
 
-                {% endfor %}
 
-                <script>
-                    function submitBuy(id){
-                        document.getElementById("input"+id).value = id;
-                        document.getElementById("buy"+id).submit();
-
-                    }
-                </script>
-            
-                    <script src="/static/vendor/jquery/jquery.min.js"></script>
-                    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-                    <!-- Core plugin JavaScript-->
-                    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-                    <!-- Custom scripts for all pages-->
-                    <script src="/static/js/sb-admin-2.js"></script>
-
-                    <!-- Page level plugins -->
-                    <script src="/static/vendor/chart.js/Chart.min.js"></script>
-
-                    <!-- Page level custom scripts -->
-                    <script src="/static/js/demo/chart-area-demo.js"></script>
-                    <script src="/static/js/demo/chart-pie-demo.js"></script>
                 </div>
+                <!-- DataTales  -->
+
+
+                {% block content %}
+                {% endblock %}
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="/static/js/sb-admin-2.js"></script>
+
+<!-- Page level plugins -->
+
+<script src="/static/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="/static/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="/static/js/demo/datatables-demo.js"></script>
 
 </body>
 

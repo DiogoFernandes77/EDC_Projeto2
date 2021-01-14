@@ -52,7 +52,7 @@
 
         <!-- Nav Item - Charts -->
         <li class="nav-item ">
-            <a class="nav-link" href="/news">
+            <a class="nav-link" href="/shop">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Game shop</span></a>
         </li>
@@ -61,9 +61,9 @@
         <hr class="sidebar-divider">
 
 
-        <!-- Nav Item - Tables -->
+        <!-- Nav Item -  -->
         <li class="nav-item">
-            <a class="nav-link" href="/tables">
+            <a class="nav-link" href="/social">
                 <i class="fas fa-fw fa-table"></i>
                 <span>People</span></a>
         </li>
@@ -74,7 +74,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="/admin">
                 <i class="fas fa-user"></i>
-                <span>Profile</span></a>
+                <span>My account</span></a>
         </li>
 
         <!-- Divider -->
@@ -104,7 +104,7 @@
 
                 <!-- Topbar Search -->
                 <div class="d-none d-sm-inline-block mr-auto col-sm-5 navbar-search">
-                    <form method="post" action="{% url 'admin' %}">
+                    <form method="post" action="{% url 'myaccount' %}">
                         {% csrf_token %}
                         <select class="mdb-select md-form form-control bg-light border-0 small" id="sel"
                                 name="accountSelect" onchange="submit()" searchable="Search here..">

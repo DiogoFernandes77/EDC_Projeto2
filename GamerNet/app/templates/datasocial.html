@@ -1,4 +1,4 @@
-{% extends "tables.html" %}
+{% extends "social.html" %}
 
 {% block content %}
 
@@ -22,7 +22,7 @@
                                 <p class="text-muted">@{{ nick }}
                                 </p>
                             </div>
-                            <form id="profile_{{ id }}" method="get" action="{% url 'table' %}">
+                            <form id="profile_{{ id }}" method="get" action="{% url 'social' %}">
                                 <input id= submit_{{ id }} type="hidden" name="friendAction" value="0"/>
                                 <button type="button" onclick = "action1('{{ id }}')"
                                         class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">{{ makeAction }}
