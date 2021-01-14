@@ -98,7 +98,7 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-6 static-top shadow">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -107,17 +107,24 @@
 
                 <!-- Topbar Search -->
                 <!-- Topbar Search -->
-                <form method="get" action="{% url 'table' %}">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-                        <li class="nav-item">
-                            <button class="nav-link" style=" background-color:{{ color1 }};"id="people-tab"  onclick = "submit1()">Make Friends</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" style=" background-color:{{ color2 }};"id="friends-tab"  onclick = "submit2()">Friends</button>
-                        </li>
-                        <input id="submitIn" type="hidden" name="myinput" value="0"/>
-                    </ul>
+                <form method="get" action="{% url 'table' %}">
+                    <row>
+                        <ul class="nav nav-tabs" id="myTab" >
+
+                            <li class="nav-item">
+                                <button class="nav-link" style=" background-color:{{ color1 }};"id="people-tab"  onclick = "submit1()">People</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" style=" background-color:{{ color3 }};"id="suggested-tab"  onclick = "submit3()">Suggested</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" style=" background-color:{{ color2 }};"id="friends-tab"  onclick = "submit2()">Friends</button>
+                            </li>
+
+                            <input id="submitIn" type="hidden" name="myinput" value="0"/>
+                        </ul>
+                    </row>
 
                 </form>
 
@@ -131,10 +138,14 @@
                     function submit2() { // trigger action
                         document.getElementById("submitIn").value = "Friends";
                     }
+                    function submit3() { // trigger action
+                        document.getElementById("submitIn").value = "Sugggested";
+                    }
                 </script>
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
+
 
                     <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                     <li class="nav-item dropdown no-arrow d-sm-none">
@@ -161,7 +172,7 @@
                     </li>
 
                 </ul>
-
+                </div>
             </nav>
 
 

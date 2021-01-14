@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d6eecc8-c3b6-48a4-a429-6ecce2117ad3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamerNet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graph.n3" beforeDir="false" afterPath="$PROJECT_DIR$/app/graph.n3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/graph.n3" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/graph.n3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/templates/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/templates/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/templates/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamerNet/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/GamerNet/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +22,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mFJlCIEdZYHtfN59Jhsrh0970o" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,10 +36,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../edcGit/EDC_Projeto2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="GamerNet" type="Python.DjangoServer" factoryName="Django server">
@@ -76,6 +82,17 @@
       <workItem from="1609190280248" duration="10082000" />
       <workItem from="1609240644733" duration="23717000" />
       <workItem from="1609279742037" duration="40000" />
+      <workItem from="1609280182222" duration="869000" />
+      <workItem from="1609281458741" duration="26000" />
+      <workItem from="1609281766082" duration="8778000" />
+      <workItem from="1609334301971" duration="681000" />
+      <workItem from="1609335104029" duration="5889000" />
+      <workItem from="1609365910708" duration="6841000" />
+      <workItem from="1610470574257" duration="897000" />
+      <workItem from="1610578655251" duration="4586000" />
+      <workItem from="1610583576418" duration="7904000" />
+      <workItem from="1610623532962" duration="7455000" />
+      <workItem from="1610631281719" duration="89000" />
     </task>
     <servers />
   </component>

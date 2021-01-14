@@ -172,6 +172,8 @@ def get_no_friends(acc):
                         ?account foaf:knows game:""" + acc + """.
                     }
                 )
+                filter (game:""" + acc + """ != ?account)
+              
             } 
         """
     result = queryDB(query)
@@ -190,6 +192,107 @@ def get_friends(acc):
             """
     result = queryDB(query)
     return [(x["name"]["value"], x["nick"]["value"], x["account"]["value"], x["logo"]["value"]) for x in result]
+
+def get_recommended_friends(acc):
+
+    query = """
+                select (count(distinct(?game)) as ?count) ?account
+                where 
+                { 
+                    {   
+                
+                        game:""" + acc + """ a foaf:Person .
+                        game:""" + acc + """ game:owns ?game .
+                    }
+                    {
+                        ?account game:owns ?game.
+                    }
+                    
+                    minus {game:""" + acc + """ foaf:knows ?account}
+                    filter (game:""" + acc + """ != ?account)
+                    
+                          
+                }
+                group by ?account
+                order by desc(?count)
+    """
+    result = queryDB(query)
+
+    if not 'account' in result[0]:
+        print("sem amigos recomencados")
+        result1 = []
+    else:
+        result = [(x["account"]["value"]) for x in result]
+
+
+        rec_friend = [ p.split("http://GamerNetLibrary.com/")[1] for p in result]
+
+        result1 = []
+
+        for r in rec_friend:
+
+            result1.append(get_attributes(acc, r))
+
+
+    return result1
+
+def get_attributes(acc1, acc2):
+
+
+    query = """
+                select ?name ?nick ?logo ?account
+                where { 
+                      game:""" + acc2 + """ foaf:name ?name.
+                      game:""" + acc2 + """ foaf:nick ?nick.
+                      game:""" + acc2 + """ foaf:logo ?logo.
+                      FILTER (
+                        !EXISTS {
+                            game:""" + acc1 + """ foaf:knows game:""" + acc2 + """.
+                    }
+                )
+                      
+                }"""
+
+    lst = queryDB(query)
+    return [(x["name"]["value"], x["nick"]["value"], "http://GamerNetLibrary.com/"+str(acc2), x["logo"]["value"]) for x in lst][0]
+
+def get_common_games(acc1,acc2):
+    query = """
+                select ?game
+                where { 
+                        {
+                            game:""" + acc1 + """ game:owns ?game .
+                        }
+                        {
+                            game:""" + acc2 + """ game:owns ?game .
+                        }
+                   
+                } 
+                """
+    result = queryDB(query)
+    #print(result)
+    return [ x["game"]["value"] for x in result]
+
+def get_common_friends(acc1,acc2):
+    query = """
+            select ?person ?name ?nick ?logo
+            where { 
+                    {
+                      
+                        game:""" + acc1 + """ foaf:knows ?person .
+                    }
+                    {
+                        game:""" + acc2 + """ foaf:knows ?person .
+                        ?person foaf:name ?name.
+                        ?person foaf:nick ?nick.
+                        ?person foaf:logo ?logo.
+                    }
+
+            } 
+            """
+    result = queryDB(query)
+    # print(result)
+    return [(x["name"]["value"], x["nick"]["value"], x["person"]["value"], x["logo"]["value"]) for x in result]
 
 def make_friend(friend1, friend2):
     query = """
@@ -267,6 +370,10 @@ def test():
 # print(get_game_info("10"))
 # insert_price()
 #print(get_no_friends("Account1"))
+#print(get_attributes("Account1"))
+#print(get_recommended_friends("Account1"))
+#print(get_common_games("Account10","Account16"))
+print(get_common_friends("Account10","Account16"))
 #print(get_games("Account1"))
 #print(search_game("Counter", "Account1"))
 #print(make_friend("Account1", "Account7"))

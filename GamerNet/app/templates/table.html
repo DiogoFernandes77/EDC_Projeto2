@@ -28,8 +28,7 @@
                                         class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">{{ makeAction }}
                                 </button>
                                 <button type="button" onclick = "see('{{ id }}')"
-                                        class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">See
-                                    Games
+                                        class="btn btn-primary mt-3 btn-rounded waves-effect w-md waves-light">See Profile
                                 </button>
                             </form>
                             <div class="mt-4">
@@ -48,7 +47,7 @@
 
                 }
                 function see(id) { // trigger action
-                    document.getElementById("submit_"+id).value = "See Games";
+                    document.getElementById("submit_"+id).value = "see"+id;
                     document.getElementById("profile_"+id).submit();
                 }
         </script>

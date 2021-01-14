@@ -49,13 +49,18 @@ def table(request):
 
     global color_people
     global color_friends
+    global color_suggested
     global make_action
     global sel
     if request.method == "GET" and "myinput" in request.GET:
         sel = request.GET["myinput"]
 
     if request.method == "GET" and "friendAction" in request.GET:
-        if request.GET["friendAction"] != "See Games":
+        action = request.GET["friendAction"].split("see")
+
+        print("action")
+        print(action)
+        if len(action) == 1:
             friend_account = request.GET["friendAction"].split("http://GamerNetLibrary.com/")[1]
             #print(make_action)
             if make_action == "Add Friend":
@@ -66,21 +71,68 @@ def table(request):
                 delete_friend(account, friend_account)
                 delete_friend(friend_account, account)
 
+        else:
+            id2_account = request.GET["friendAction"].split("see")[1]
+            user2_account = id2_account.split("http://GamerNetLibrary.com/")[1]
+
+            person_info = get_person_info(user2_account)
+            name = person_info.pop(0)
+            nick = person_info.pop(0)
+            logo = person_info.pop(0)
+            games_owned = person_info.copy()
+            games_owned_info = []
+
+            common_games= get_common_games(account,user2_account)
+            common_games_info = []
+            for game in common_games:
+                game = game.split("http://GamerNetLibrary.com/")[1]
+                for attrib in get_game_info(game):
+                    common_games_info.append(attrib)
+
+            print("Common Games")
+            print(common_games_info)
+
+            for game in games_owned:
+                game = game.split("http://GamerNetLibrary.com/")[1]
+                for attrib in get_game_info(game):
+                    games_owned_info.append(attrib)
+
+            tparams = {
+                'name': name,
+                'nick': nick,
+                'logo':logo,
+                'games': games_owned_info,
+                'commonGames': common_games_info,
+                'commonFriends': get_common_friends(account,user2_account),
+                'loggedAccount': globl_acc,
+                'error' : "error"
+                }
+
+            return render(request, 'profile.html', tparams)
+
     people = get_no_friends(account)
 
     if sel == "Friends":
         color_people = "white"
+        color_suggested = "White"
         color_friends = "RoyalBlue"
+
         make_action = "Delete Friend"
 
         people = get_friends(account)
-    else:
-        color_people = "RoyalBlue"
-        color_friends = "white"
+    elif sel == "Sugggested":
+
+        color_people = "white"
+        color_suggested = "RoyalBlue"
+        color_friends = "White"
         make_action = "Add Friend"
 
-
-
+        people = get_recommended_friends(account)
+    else:
+        color_people = "RoyalBlue"
+        color_suggested = "White"
+        color_friends = "white"
+        make_action = "Add Friend"
 
     tparams = {
         'xml': "html",
@@ -88,11 +140,13 @@ def table(request):
         'people': people,
         'color1': color_people,
         'color2': color_friends,
+        'color3': color_suggested,
         'makeAction': make_action,
         'loggedAccount': globl_acc
     }
 
     return render(request, "table.html", tparams)
+
 
 global globl_acc
 globl_acc = "Account1"
@@ -159,10 +213,6 @@ def store(request):
     genres_list = get_genres()
     game_list = get_games(account)
 
-    #print(game_list)
-    #print(genres_list)
-
-    #print(request.GET)
 
     if request.method == "GET" and "buyID" in request.GET:
         game_id = request.GET["buyID"].split("http://GamerNetLibrary.com/")[1]
@@ -187,8 +237,6 @@ def store(request):
     if len(game_list) == 0:
         globl_gen = "Select game gender"
         warn_message = "Didn't find any results"
-
-
 
 
     tparams = {
